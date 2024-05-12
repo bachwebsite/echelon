@@ -4,155 +4,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jacquarda+Bastarda+9&family=Manrope:wght@200..800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./data/css/root.css">
-    <link rel="stylesheet" href="./data/css/style.css">
-    <script type='text/javascript' src='//banddisordergraceless.com/4f/17/ef/4f17ef8a1a00e17292558dbc42958a7e.js'></script>
-    <script type='text/javascript' src='//banddisordergraceless.com/20/6a/6d/206a6d12234510b2108b9be28905e196.js'></script>    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9624515888311250"
-     crossorigin="anonymous"></script><!-- Google tag (gtag.js) -->
-     <script async src="https://www.googletagmanager.com/gtag/js?id=G-71YXG1KMKT"></script>
-     <link href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css" rel="stylesheet">
-     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-     
-      gtag('config', 'G-71YXG1KMKT');
-    </script>
-    <title>breakium</title>
+    <link rel="stylesheet" href="./data/css/index.css">
+    <title>ECHELON</title>
 </head>
 
-<body style="background-color:black;">
+<body style="background:black;">
   <div id="container">
-    <div id="loading">
-        <img id="loading-image" src="./data/images/loading.gif" alt="Loading..." />
-    </div>
-    <div id="darker"></div>
-    <center>
-      <h1 onclick="window.location = '/'">breakium</h1>
-      <div id="mm">
-        <form id="uv-form" class="searchbar-center">
-          <div class="searchbar-input-spacer"></div>
-          <input id="uv-address" type="text" class="searchbar-input" autocomplete="off" title="Search" role="combobox" placeholder="search" />
-        </form>
-      </div>
-      <select id="cloakSelect"></select>
-      <input type="text" id="panickey" maxlength="1"></input>
-      <input type="text" id="panicurl"></input>
-      <div id="marks">
-        <div id="markiplier" onclick="launchnew();" class="dont-delete"><img src="./data/images/plus.png"><p>New +</p></div>
-      </div>
-
-    </center>  
+    <h1 id="ech__title">ECHELON</h1>
+    <form id="uv-form" class="searchbar-center">
+      <div class="searchbar-input-spacer"></div>
+      <input id="uv-address" type="text" class="searchbar-input" autocomplete="off" title="Search" role="combobox" placeholder="search" />
+    </form>
   </div>
-    <script src="uv/uv.bundle.js"></script>
-    <script src="uv/uv.config.js"></script>
-    <script src="uv/uv.sw.js"></script>
-    <script src="./sw.js"></script>
-    <script src="/dynamic/dynamic.config.js"></script>
-    <script src="./data/js/cloak/panic.js"></script>
-    <script>
-      function launchnew() {
-        const b = prompt("What is the URL of it?") || "";
-        const c = prompt("What is the icon?") || "";
-        const d = prompt("What is the title?") || "";
-  
-        const e = document.querySelector("#marks");
-  
-        const f = document.createElement("div");
-        f.setAttribute("id", "mark");
-        f.setAttribute("onclick", `launch('${b}');`);
-        f.setAttribute("data-url", b);
-        f.setAttribute("data-icon", c);
-        f.setAttribute("data-title", d);
-        const g = document.createElement("img");
-        g.setAttribute("src", c);
-        const h = document.createElement("p");
-        h.textContent = d;
-        const deleteButton = document.createElement("button");
-        deleteButton.textContent = "❌";
-        deleteButton.setAttribute("id", "delete-button");
-        deleteButton.addEventListener("click", function() {
-          e.removeChild(f);
-          updateLocalStorage();
-        });
-  
-        f.appendChild(g);
-        f.appendChild(h);
-        f.appendChild(deleteButton);
-        e.appendChild(f);
-        updateLocalStorage();
-      }
-      function updateLocalStorage() {
-        const marks = [];
-        const markElements = document.querySelectorAll("#mark");
-        markElements.forEach(markElement => {
-          const mark = {
-            url: markElement.getAttribute("data-url"),
-            icon: markElement.getAttribute("data-icon"),
-            title: markElement.getAttribute("data-title")
-          };
-          marks.push(mark);
-        });
-        localStorage.setItem("marks", JSON.stringify(marks));
-      }
-  
-      function loadMarks() {
-        const marks = JSON.parse(localStorage.getItem("marks")) || [];
-        const e = document.getElementById("marks");
-
-        marks.forEach(mark => {
-          const f = document.createElement("div");
-          f.setAttribute("id", "mark");
-          f.setAttribute("data-url", mark.url);
-          f.setAttribute("data-icon", mark.icon);
-          f.setAttribute("data-title", mark.title);
-          f.setAttribute("onclick", `launch('${mark.url}');`);
-          const g = document.createElement("img");
-          g.setAttribute("src", mark.icon);
-          const h = document.createElement("p");
-          h.textContent = mark.title;
-          const deleteButton = document.createElement("button");
-          deleteButton.textContent = "❌";
-          deleteButton.setAttribute("id", "delete-button");
-          deleteButton.addEventListener("click", function(event) {
-            event.stopPropagation();
-            if (!f.classList.contains("dont-delete")) {
-              e.removeChild(f);
-              updateLocalStorage();
-            }
-          });
-
-          f.appendChild(g);
-          f.appendChild(h);
-          f.appendChild(deleteButton);
-          e.appendChild(f);
-        });
-      }
-      window.addEventListener("load", loadMarks);
-  
-    </script>
-
-    <script>
-      const worker = new Worker("/dynamic/dynamic.worker.js");
-    </script>
-    
-
-    <script src="./data/js/index.js"></script>
-    <script src="./data/js/loading.js"></script>
-    <script src="./data/js/color.js"></script>
-    <script src="./data/js/custom-friconix.js"></script>
-    <script src="./data/js/siba.js"></script>
-    <script src="./data/js/keypresses.js"></script>
-    <script src="./data/js/nav.js"></script>
-    <script src="./data/js/cloak/cloak.js"></script>
-
-    
-
-    <script defer src="./data/js/friconix.js"> </script>
-    <script src="https://kit.fontawesome.com/671b9764c1.js" crossorigin="anonymous"></script>
+  <script src="uv/uv.bundle.js"></script>
+  <script src="uv/uv.config.js"></script>
+  <script src="uv/uv.sw.js"></script>
+  <script src="./sw.js"></script>
+  <script src="/dynamic/dynamic.config.js"></script>
+  <script>
+    const worker = new Worker("/dynamic/dynamic.worker.js");
+  </script>
 </body>
 
 </html>
