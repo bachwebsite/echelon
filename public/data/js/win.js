@@ -1,5 +1,5 @@
-const form = document.getElementById("form");
-const address = document.getElementById("address");
+const form = document.getElementById("uv-form");
+const address = document.getElementById("uv-address");
 const input = document.querySelector("input");
 
 function rFram() {
@@ -47,32 +47,6 @@ function tfsFram() {
     openFullScreen();
   }
 }
-
-var devToggle = "false";
-
-function inspectelement() {
-    if (devToggle == "true") {
-      eruda.destroy();
-      devToggle = "false";
-      console.log(devToggle);
-    } else if (devToggle == "false") {
-      eruda.init({
-        features: [
-          erudaOrientation,
-          erudaBenchmark,
-          erudaCode,
-          erudaTiming,
-          erudaFeatures,
-          erudaMonitor
-        ]
-      });
-      devToggle = "true";
-      console.log(devToggle);
-    }
-}  
-
-eruda.init();
-eruda.hide();
 
 setTimeout(function () {
   eruda.destroy();

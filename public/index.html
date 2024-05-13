@@ -1,29 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jacquarda+Bastarda+9&family=Manrope:wght@200..800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="./data/css/style.css">
+      <link href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css" rel="stylesheet">
+      <title>breakium</title>
+  </head>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link rel="stylesheet" href="./data/css/index.css">
-    <title>ECHELON</title>
-</head>
+  <body style="background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('./data/images/bg.png') no-repeat center center fixed;background-size: cover;">
+    <div id="container">
+      <center>
+        <h1 id="ech__title">echelon</h1>
+        <div id="mm">
+          <form id="uv-form" class="searchbar-center">
+            <div class="searchbar-input-spacer"></div>
+            <input class="ech__search" id="uv-address" type="text" class="searchbar-input" autocomplete="off" title="Search" role="combobox" placeholder="search" />
+          </form>
+        </div>
+      </center>  
+    </div>
+      <script src="uv/uv.bundle.js"></script>
+      <script src="uv/uv.config.js"></script>
+      <script src="uv/uv.sw.js"></script>
+      <script src="./sw.js"></script>
+      <script src="/dynamic/dynamic.config.js"></script>
 
-<body style="background:black;">
-  <div id="container">
-    <h1 id="ech__title">ECHELON</h1>
-    <form id="uv-form" class="searchbar-center">
-      <div class="searchbar-input-spacer"></div>
-      <input id="uv-address" type="text" class="searchbar-input" autocomplete="off" title="Search" role="combobox" placeholder="search" />
-    </form>
-  </div>
-  <script src="uv/uv.bundle.js"></script>
-  <script src="uv/uv.config.js"></script>
-  <script src="uv/uv.sw.js"></script>
-  <script src="./sw.js"></script>
-  <script src="/dynamic/dynamic.config.js"></script>
-  <script>
-    const worker = new Worker("/dynamic/dynamic.worker.js");
-  </script>
-</body>
-
+      <script>
+        const worker = new Worker("/dynamic/dynamic.worker.js");
+      </script>
+      <script>
+        async function wait(milliseconds) {
+          return new Promise(resolve => {
+            setTimeout(resolve, milliseconds);
+          });
+        }
+        const inputBox = document.getElementById('input-box');
+        inputBox.addEventListener('keypress', function() {
+          inputBox.classList.add('fade-in');
+        });
+      </script>
+      
+      <script src="./data/js/index.js"></script>
+      <script src="https://kit.fontawesome.com/671b9764c1.js" crossorigin="anonymous"></script>
+  </body>
 </html>

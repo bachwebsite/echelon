@@ -17,7 +17,7 @@ const __dirname = process.cwd();
 app.get('/', (req, res) => {
   res.sendFile(path.join(process.cwd(), '/public/index.html'));
 });
-app.get('/app', (req, res) => {
+app.get('/echelon', (req, res) => {
   res.sendFile(path.join(process.cwd(), '/public/q.html'));
 });
 

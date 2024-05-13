@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'FONT1', sans-serif;
+  src: url('/data/fonts/BeVietnamPro-Bold.ttf');
+}
+
+* {
+  font-family: 'FONT1', sans-serif;
+}
+
+#container {
+  display: flex;
+  align-items: center; 
+  justify-content: center;   
+}
+#ech__title {
+  font-size: 125px;
+  font-family: 'FONT1', sans-serif;
+  color: rgb(99, 99, 222);
+  user-select: none;
+}
+.ech__search {
+  width: 700px;
+  height: 50px;
+  background-color: rgb(4, 4, 55);
+  border: 3px solid rgb(99, 99, 222);
+  color: white;
+  transition: opacity 0.5s ease;
+}
