@@ -14,11 +14,26 @@ const app = express();
 
 const __dirname = process.cwd();
 
-app.get('/', (req, res) => {
+app.get("/go=:query", async (req, res) => {
+  const { query } = req.params;
+  try {
+    const reply = await fetch(`http://api.duckduckgo.com/ac/?q=${query}&format=json`);
+    const data = await reply.json();
+    res.send(data);
+  } catch (error) {
+    console.error('Error fetching suggestions:', error);
+    res.status(500).send({ error: 'Failed to fetch suggestions' });
+  }
+});
+
+app.get('/chelon', (req, res) => {
   res.sendFile(path.join(process.cwd(), '/public/index.html'));
 });
-app.get('/echelon', (req, res) => {
+app.get('/', (req, res) => {
   res.sendFile(path.join(process.cwd(), '/public/q.html'));
+});
+app.get('/null', (req, res) => {
+  res.sendFile(path.join(process.cwd(), '/public/start.html'));
 });
 
 app.use(compression());

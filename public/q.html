@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">   
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9624515888311250"
      crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="./data/css/q.css">
     <!-- uv vvv -->
     <script src="/uv/uv.bundle.js"></script>
     <script src="/uv/uv.config.js"></script>
@@ -13,105 +14,133 @@
     <script src="/dynamic/dynamic.config.js"></script>
     <!-- eruda -->
     <script src="./data/js/eruda.js"></script>
-    
-    <style>
-      @font-face{font-family:'FONT2';src:url('./data/fonts/BeVietnamPro-ExtraLight.ttf');}
-      *{margin:0;padding:0;overflow:hidden}
-      #fram{width:100vw;height:100vh;z-index:99;border:none}
-      body{top:50%;font-family:'FONT2',sans-serif;background:url('/data/images/loading.gif') no-repeat;transition:.5s}
-      a{color:inherit;text-decoration:none}
-      .top-spot{display:flex;width:500px;height:22px;border-radius:5px;padding:9px;position:fixed;top:5.5vh;z-index:10000;left:50%;background:#072e7b5a;border:2px solid navy;text-align:center;align-content:space-evenly;align-items:center;transform:translate(-50%,-4vh)}
-      .top-spot-enclosure{text-align:center;position:absolute;left:50%;transform:translate(-50%,0);display:flex}
-      #right-spot {display: flex;flex-direction: column;width: 50px;min-height: auto;border-radius: 5px;position: fixed;z-index: 10000;right: 0;background: #072e7b5a;border: 2px solid navy;align-content: space-evenly;text-align: center;transform: translate(-50%, -4vh);overflow-y: auto;}
-      #right-spot-enclosure {display: flex;width: 80px;height: 400px;justify-content: center;align-items: center;margin: 0;padding: 0;right: 0;position: fixed;top: 50%;transform: translateY(-50%);}
-      .buttin{height:26px;cursor:pointer;justify-content:space-evenly;transition:.3s;padding:5px}
-      .buttin img{width:26px;display:flex;height:auto;transition:1s;margin-left: 0.25vw;align-items:center;justify-content:center;}
-      .buttin #svgg{filter: invert(100%) sepia(4%) saturate(0%) hue-rotate(293deg) brightness(107%) contrast(104%);}
-      .buttin p{vertical-align:top;display:inline-flex;will-change:auto;margin:0;margin-right:1px}
-      button{appearance:none;background-color:#000;border:.125em solid #1A1A1A;border-radius:.9375em;box-sizing:border-box;color:#fff;cursor:pointer;display:inline-block;line-height:normal;min-height:3.75em;min-width:48%;outline:none;margin-left:1%;margin-bottom:2%;padding:1em 2.3em;text-align:center;text-decoration:none;user-select:none}
-      .slashapp{align-items:center;text-align:center;margin-bottom:8px}
-      .slashapp_{font-family:'FONT2',sans-serif;font-size:16px;border:none;background-color:#000;color:white;padding:.7rem 1rem;border-radius:3px;width:500px;height:24px;opacity:.3;text-align:center}
-      .slashapp_:focus{outline:none}
-      .transitionedtopbar{transition:.3s ease-in-out}
-      .transitionedrightbar{transition:.3s ease-in-out}
-      #customCloakinput{display:none}
-    </style>
 </head>
 <body style="background-color:black;">
-    <div class="top-spot">
+  <div class="top-spot">
       <div class="top-spot-enclosure">
-        <div class="slashapp" autocomplete="off" style="width: 500px; position: relative; margin-right:10px; margin-top: 7px; border-radius: 10px;"><form id="uv-form"><input placeholder="type as you must" id="uv-address" style="max-height: 10px; padding: 10px; letter-spacing: 1px;"class="slashapp_" type="text" /></form></div>
+          <a onclick="window.location.href = '/'">
+              <div class="buttin"><img id="svgg" style="width: 35px;" src="/data/images/svg/home.svg"></div>
+          </a>
+          <a onclick="bFram()">
+              <div class="buttin"><img id="svgg" style="margin-top: 4px;" src="/data/images/svg/left.svg"></div>
+          </a>
+          <a onclick="rFram()">
+              <div class="buttin"><img id="svgg" style="width: 36px;" src="/data/images/svg/reload.svg"></div>
+          </a>
+          <a onclick="fFram()">
+              <div class="buttin"><img id="svgg" style="margin-top: 4px;" src="/data/images/svg/right.svg"></div>
+          </a>
+          <div class="slashapp" autocomplete="off" style="width: 500px; position: relative; margin-right:10px; margin-top: 7px; border-radius: 10px;">
+              <form id="uv-form">
+                  <input placeholder="type as you must" id="uv-address" style="max-height: 10px; padding: 10px; letter-spacing: 1px;" class="slashapp_" type="text">
+              </form>
+              <div id="suggestions-box"></div>
+          </div>
+          <a onclick="fsFram()">
+              <div class="buttin"><img id="svgg" style="margin-top: 4px;" src="/data/images/svg/fullscreen.svg"></div>
+          </a>
+          <a onclick="window.open(document.getElementById('fram').src, '_blank')">
+              <div class="buttin"><img id="svgg" style="margin-top: 4px;" src="/data/images/svg/newtab.svg"></div>
+          </a>
+          <a onclick="consol()">
+              <div class="buttin"><img id="svgg" style="margin-top: 4px;" src="/data/images/svg/inspect.svg"></div>
+          </a>
       </div>
-    </div>
-    <div id="right-spot-enclosure">
-      <div id="right-spot">
-        <a onclick="window.location.href = '/'"><div class="buttin"><img id="svgg" style="width: 35px;" src="/data/images/svg/home.svg" /></div></a>
-        <a onclick="bFram()"><div class="buttin"><img id="svgg" style="margin-top: auto;" src="/data/images/svg/left.svg" /></div></a>
-        <a onclick="fFram()"><div class="buttin"><img id="svgg" style="margin-top: auto;" src="/data/images/svg/right.svg" /></div></a>
-        <a onclick="rFram()"><div class="buttin"><img id="svgg" style="width: 36px;" src="/data/images/svg/reload.svg" /></div></a>
-        <a onclick="fsFram()"><div class="buttin"><img id="svgg" style="margin-top: auto;" src="/data/images/svg/fullscreen.svg" /></div></a>
-        <a onclick="ntFram()"><div class="buttin"><img id="svgg" style="margin-top: auto;" src="/data/images/svg/newtab.svg" /></div></a>
-        <a onclick="consol()"><div class="buttin"><img id="svgg" style="margin-top: auto;" src="/data/images/svg/inspect.svg" /></div></a>
+      <div id="suggestions-box"></div>
+      <div class="buttin" id="toggleTopBar">
+          <img src="/data/images/svg/collapse.svg" style="width: 26px;" id="toggleIcon">
       </div>
-    </div>
-    <iframe src="" id="fram"></iframe>
+  </div>
+    
+    <iframe src="null" id="fram"></iframe>
     <script>
-      function _0x5483(){const _0x44c4fc=['getElementById','src','fram','558123TPHhkO','3048900wmylpJ','2484480Songku','2ycwrcP','12663lnKMiR','log','encodedUrl','getItem','4930mmUQzr','227302SqyWrL','2232867UXbKpS','140xBlkOd','71572BRCnTH'];_0x5483=function(){return _0x44c4fc;};return _0x5483();}function _0x280f(_0x4d0df3,_0x1e38bb){const _0x548377=_0x5483();return _0x280f=function(_0x280f45,_0x165d76){_0x280f45=_0x280f45-0x13d;let _0x2770ca=_0x548377[_0x280f45];return _0x2770ca;},_0x280f(_0x4d0df3,_0x1e38bb);}(function(_0xde0022,_0x924ca3){const _0x49348f=_0x280f,_0x45391f=_0xde0022();while(!![]){try{const _0x32baae=-parseInt(_0x49348f(0x141))/0x1*(parseInt(_0x49348f(0x147))/0x2)+parseInt(_0x49348f(0x13e))/0x3+parseInt(_0x49348f(0x14a))/0x4*(parseInt(_0x49348f(0x149))/0x5)+parseInt(_0x49348f(0x13f))/0x6+-parseInt(_0x49348f(0x148))/0x7+parseInt(_0x49348f(0x140))/0x8+-parseInt(_0x49348f(0x142))/0x9*(parseInt(_0x49348f(0x146))/0xa);if(_0x32baae===_0x924ca3)break;else _0x45391f['push'](_0x45391f['shift']());}catch(_0x125af4){_0x45391f['push'](_0x45391f['shift']());}}}(_0x5483,0x40e5d));function loadIframe(_0x1551f6){const _0x960519=_0x280f,_0x1cd666=document[_0x960519(0x14b)](_0x960519(0x13d));_0x1cd666['src']=_0x1551f6;}function setIframe(){const _0x2c364b=_0x280f,_0x43dbfd=sessionStorage[_0x2c364b(0x145)](_0x2c364b(0x144));console[_0x2c364b(0x143)](_0x43dbfd),document[_0x2c364b(0x14b)](_0x2c364b(0x13d))[_0x2c364b(0x14c)]=_0x43dbfd;}
+      function toggleTopBar() {
+          const topSpot = document.querySelector('.top-spot');
+          const toggleIcon = document.getElementById('toggleIcon');
+
+          if (topSpot.style.height === '2.5vh') {
+              topSpot.style.height = '0';
+              toggleIcon.src = '/data/images/svg/expand.svg'; // Change the icon to expand
+          } else {
+              topSpot.style.height = '2.5vh';
+              toggleIcon.src = '/data/images/svg/collapse.svg'; // Change the icon to collapse
+          }
+      }
+
+      document.getElementById('toggleTopBar').addEventListener('click', toggleTopBar);
     </script>
     <script>
-      window.addEventListener('DOMContentLoaded', () => {
-      const _0x4092cb = document.querySelector('.top-spot'),
-        _0x10e3c5 = document.documentElement.scrollTop || document.body.scrollTop
-      _0x10e3c5 === 0 && (_0x4092cb.style.top = '0px')
-      let _0x10f81f = false
-      document.addEventListener('mousemove', (_0x1b47df) => {
-        _0x1b47df.clientY <= 35
-          ? !_0x10f81f &&
-            ((_0x4092cb.style.top = '40px'),
-            _0x4092cb.classList.add('transitionedtopbar'),
-            (_0x10f81f = true))
-          : _0x10f81f &&
-            ((_0x4092cb.style.top = '0px'),
-            _0x4092cb.classList.add('transitionedtopbar'),
-        (_0x10f81f = false))
-      })
-    });
+      document.getElementById('uv-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          const urlInput = document.getElementById('uv-address');
+          const newUrl = urlInput.value;
+
+          // Update iframe source with the new URL
+          const iframe = document.getElementById('fram');
+          iframe.src = newUrl;
+
+          document.getElementById('uv-form').onsubmit = function() {
+            const urlInput = document.getElementById('uv-address');
+            urlInput.value = "Loading.."
+          }
+
+          iframe.onload = function() {
+              const iframeSrc = iframe.src;
+              const serviceIndex = iframeSrc.indexOf('/service/');
+              if (serviceIndex !== -1) {
+                  const extractedText = iframeSrc.substring(serviceIndex + 9);
+                  const decodedText = __uv$config.decodeUrl(extractedText);
+                  urlInput.value = decodedText;
+              } else {
+                  console.error('The string "/service/" was not found in the iframe src.');
+              }
+          };
+      });
     </script>
     <script>
-      window.addEventListener('DOMContentLoaded', () => {
-        const topSpotElement = document.querySelector('#right-spot');
-        const initialScrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
-      
-        if (initialScrollPosition === 0) {
-            topSpotElement.style.right = '-60px';
-        }
-      
-        let isNearRightSide = false;
-      
-        document.addEventListener('mousemove', (event) => {
-            const distanceFromRight = window.innerWidth - event.clientX;
-      
-            const threshold = 35;
-      
-            if (distanceFromRight <= threshold) {
-                if (!isNearRightSide) {
-                    topSpotElement.style.right = '0px';
-                    topSpotElement.classList.add('transitionedrightbar');
-                    isNearRightSide = true;
-                }
+      document.addEventListener('DOMContentLoaded', () => {
+        const searchBox = document.getElementById('uv-address');
+        const suggestionsBox = document.getElementById('suggestions-box');
+
+        searchBox.addEventListener('input', async () => {
+            const query = searchBox.value.trim();
+
+            if (query.length > 0) {
+                const suggestions = await getSuggestions(query);
+                showSuggestions(suggestions);
             } else {
-                if (isNearRightSide) {
-                    topSpotElement.style.right = '-60px';
-                    isNearRightSide = false;
-                }
+                suggestionsBox.style.display = 'none';
             }
         });
-    });
+
+        async function getSuggestions(query) {
+            const response = await fetch(`/go=${encodeURIComponent(query)}`);
+            const data = await response.json();
+            return data;
+        }
+
+        function showSuggestions(suggestions) {
+            suggestionsBox.innerHTML = '';
+
+            if (suggestions.length > 0) {
+                suggestionsBox.style.display = 'block';
+                suggestions.forEach(suggestion => {
+                    const suggestionItem = document.createElement('div');
+                    suggestionItem.classList.add('suggestion-item');
+                    suggestionItem.textContent = suggestion.phrase;
+                    suggestionItem.addEventListener('click', () => {
+                        searchBox.value = suggestion.phrase;
+                        suggestionsBox.style.display = 'none';
+                    });
+                    suggestionsBox.appendChild(suggestionItem);
+                });
+            } else {
+                suggestionsBox.style.display = 'none';
+            }
+        }
+      });
     </script>
     <script type="text/javascript">setIframe();</script>
     <script src="./data/js/win.js"></script>
-    
 </body>
 </html>
-
-
