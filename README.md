@@ -1,3 +1,0 @@
-# ECHELON
-
-# MADE BY BACH, GRIN, WOOF;
