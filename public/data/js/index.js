@@ -149,7 +149,7 @@ function launch(val) {
           "go": "/app",
           "norm": encodedUrl
         };
-        const urlToNavigate = browseUrls[browseSetting] || "/app";
+        const urlToNavigate = browseUrls["norm"]
         location.href = urlToNavigate;
       })
       .catch((error) => {
