@@ -7,7 +7,7 @@ import 'dotenv/config';
 import path from "node:path";
 
 let port = parseInt(process.env.PORT || "");
-if (isNaN(port)) port = 5500;
+if (isNaN(port)) port = 2100;
 
 const bare = createBareServer("/bare/");
 const app = express();
@@ -35,6 +35,10 @@ app.get('/', (req, res) => {
 app.get('/null', (req, res) => {
   res.sendFile(path.join(process.cwd(), '/public/start.html'));
 });
+app.get('/games', (req, res) => {
+  res.sendFile(path.join(process.cwd(), '/public/nobodywillseethisunlessskidding.html'));
+});
+
 
 app.use(compression());
 app.use(express.static(process.cwd() + "/public/"));

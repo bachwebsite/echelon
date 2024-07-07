@@ -15,7 +15,7 @@
     <!-- eruda -->
     <script src="./data/js/eruda.js"></script>
 </head>
-<body style="background-color:black;">
+<body>
   <div class="top-spot">
       <div class="top-spot-enclosure">
           <a onclick="window.location.href = '/'">
@@ -40,7 +40,7 @@
               <div class="buttin"><img id="svgg" style="margin-top: 4px;" src="/data/images/svg/fullscreen.svg"></div>
           </a>
           <a onclick="window.open(document.getElementById('fram').src, '_blank')">
-              <div class="buttin"><img id="svgg" style="margin-top: 4px;" src="/data/images/svg/newtab.svg"></div>
+              <div class="buttin"><img style="margin-top: 4px;" src="/data/images/svg/idk.png"></div>
           </a>
           <a onclick="consol()">
               <div class="buttin"><img id="svgg" style="margin-top: 4px;" src="/data/images/svg/inspect.svg"></div>
@@ -75,7 +75,6 @@
           const urlInput = document.getElementById('uv-address');
           const newUrl = urlInput.value;
 
-          // Update iframe source with the new URL
           const iframe = document.getElementById('fram');
           iframe.src = newUrl;
 

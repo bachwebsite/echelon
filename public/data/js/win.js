@@ -14,6 +14,14 @@ function fFram() {
   document.getElementById("fram").contentWindow.history.forward();
 }
 
+function oFram() {
+  if (document.getElementById('fram').src === "/null") {
+    error("nope");
+  } else {
+    window.open(document.getElementById('fram').src, '_blank');
+  }
+}
+
 var elem = document.documentElement;
 var isFullscreen = false;
 
