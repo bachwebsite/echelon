@@ -32,6 +32,9 @@ app.get('/chelon', (req, res) => {
 app.get('/', (req, res) => {
   res.sendFile(path.join(process.cwd(), '/public/q.html'));
 });
+app.get('/g', (req, res) => {
+  res.sendFile(path.join(process.cwd(), '/public/g.html'));
+});
 app.get('/null', (req, res) => {
   res.sendFile(path.join(process.cwd(), '/public/start.html'));
 });
