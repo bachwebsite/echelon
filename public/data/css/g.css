@@ -1,0 +1,37 @@
+.bubbly-div {
+    width: 190px; /* Adjust the width as needed */
+    height: 225px; /* Increase the height for a taller card */
+    background-color: #f0f0f0; /* Light background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    overflow: hidden; /* Ensure content fits within the card */
+    text-align: center; /* Center the text and image */
+    margin: 16px; /* Space around the card */
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease; /* Add hover effect */
+}
+
+.bubbly-div:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+}
+
+.bubbly-div img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.bubbly-div a {
+    display: block;
+    padding: 15px;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+}
+
+.bubbly-div a:hover {
+    color: #007BFF;
+}
