@@ -25,7 +25,7 @@ const input = document.querySelector("input");
 
 const swConfig = {
   'uv': { file: '/uv/sw.js', config: __uv$config },
-  'dynamic': { file: '/dynamic/sw.js', config: __dynamic$config }
+  
 };
 function registerSW() {
   if (localStorage.getItem("registerSW") === "true") {
@@ -91,7 +91,7 @@ if ('serviceWorker' in navigator) {
   var proxySetting = localStorage.getItem('proxy') || 'uv';
   let swConfig = {
     'uv': { file: '/uv/sw.js', config: __uv$config },
-    'dynamic': { file: '/dynamic/sw.js', config: __dynamic$config }
+    
 
   };
 
@@ -126,7 +126,7 @@ function launch(val) {
     let proxySetting = localStorage.getItem('proxy') || 'uv';
     let swConfig = {
       'uv': { file: '/uv/sw.js', config: __uv$config },
-      'dynamic': { file: '/dynamic/sw.js', config: __dynamic$config }
+      
     };
 
     // Use the selected proxy setting or default to 'uv'
