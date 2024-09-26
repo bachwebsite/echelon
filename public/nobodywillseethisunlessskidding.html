@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinning BKM</title>
+    <style>
+        body {
+            font-family: monospace;
+            background-color: black;
+            color: rgb(4, 92, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        pre {
+            font-size: 12px;
+            line-height: 1;
+        }
+    </style>
+</head>
+<body>
+    <pre id="bkm"></pre>
+
+    <script>
+        const bkmElement = document.getElementById('bkm');
+
+        let A = 0, B = 0;
+        const screenWidth = 100, screenHeight = 40;
+        const zBuffer = new Array(screenWidth * screenHeight).fill(0);
+        const output = new Array(screenWidth * screenHeight).fill(' ');
+
+        // Larger ASCII art for B, K, M
+        const letters = [
+            " BBBB    K    K  M     M ",
+            " B   B   K   K   MM   MM ",
+            " B   B   K  K    M M M M ",
+            " BBBB    KKK     M  M  M ",
+            " B   B   K  K    M     M ",
+            " B   B   K   K   M     M ",
+            " BBBB    K    K  M     M ",
+        ];
+
+        const renderBKM = () => {
+            const cosA = Math.cos(A), sinA = Math.sin(A);
+            const cosB = Math.cos(B), sinB = Math.sin(B);
+
+            // Reset buffers
+            zBuffer.fill(0);
+            output.fill(' ');
+
+            for (let i = 0; i < letters.length; i++) {
+                for (let j = 0; j < letters[i].length; j++) {
+                    const char = letters[i][j];
+                    if (char !== ' ') {
+                        // Map the letters onto a 3D space and apply rotation
+                        const x = j - 10; // Shift horizontally
+                        const y = i - 5;  // Shift vertically
+                        const z = 0;
+
+                        // Apply 3D rotation
+                        const xRot = cosB * x - sinB * y;
+                        const yRot = sinA * (sinB * x + cosB * y) + cosA * z;
+                        const zRot = cosA * (sinB * x + cosB * y) - sinA * z + 10; // Adjust the distance
+
+                        const ooz = 1 / zRot;
+                        const xp = Math.floor(screenWidth / 2 + 30 * ooz * xRot);
+                        const yp = Math.floor(screenHeight / 2 - 15 * ooz * yRot);
+
+                        if (ooz > zBuffer[yp * screenWidth + xp]) {
+                            zBuffer[yp * screenWidth + xp] = ooz;
+                            output[yp * screenWidth + xp] = char;
+                        }
+                    }
+                }
+            }
+
+            // Adding line breaks after each row for correct rendering
+            let asciiFrame = '';
+            for (let i = 0; i < screenHeight; i++) {
+                asciiFrame += output.slice(i * screenWidth, (i + 1) * screenWidth).join('') + '\n';
+            }
+
+            bkmElement.textContent = asciiFrame;
+
+            A += 0.04;
+            B += 0.02;
+        };
+
+        setInterval(renderBKM, 60); // Adjust frame rate here
+    </script>
+</body>
+</html>

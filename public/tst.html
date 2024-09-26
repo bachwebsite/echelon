@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9624515888311250"
+     crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="./data/css/q.css">
+    <link rel="icon" href="https://assets.clever.com/launchpad/cbef13596/favicon.ico">
+    <link rel="shortcut icon" href="https://assets.clever.com/launchpad/cbef13596/favicon.ico">
+
+    <title>Clever | Portal</title>
+
+    <!-- uv vvv -->
+    <script src="/uv/uv.bundle.js"></script>
+    <script src="/uv/uv.config.js"></script>
+    <!-- dynamic (you never know) -->
+    <script src="/dynamic/dynamic.worker.js"></script>
+    <script src="/dynamic/dynamic.config.js"></script>
+    <!-- eruda -->
+    <script src="./data/js/eruda.js"></script>
+</head>
+<body>
+  <div class="top-spot">
+      <div class="top-spot-enclosure">
+          <a onclick="window.location.href = '/'">
+              <div class="buttin"><img id="svgg" style="width: 35px;" src="/data/images/svg/home.svg"></div>
+          </a>
+          <a onclick="bFram()">
+              <div class="buttin"><img id="svgg" style="margin-top: 4px;" src="/data/images/svg/left.svg"></div>
+          </a>
+          <a onclick="rFram()">
+              <div class="buttin"><img id="svgg" style="width: 36px;" src="/data/images/svg/reload.svg"></div>
+          </a>
+          <a onclick="fFram()">
+              <div class="buttin"><img id="svgg" style="margin-top: 4px;" src="/data/images/svg/right.svg"></div>
+          </a>
+          <div class="slashapp" autocomplete="off" style="width: 500px; position: relative; margin-right:10px; margin-top: 7px; border-radius: 10px;">
+              <form id="uv-form">
+                  <input placeholder="type as you must" id="uv-address" style="max-height: 10px; padding: 10px; letter-spacing: 1px;" class="slashapp_" type="text">
+              </form>
+              <div id="suggestions-box"></div>
+          </div>
+          <a onclick="fsFram()">
+              <div class="buttin"><img id="svgg" style="margin-top: 4px;" src="/data/images/svg/fullscreen.svg"></div>
+          </a>
+          <a onclick="window.open(document.getElementById('fram').src, '_blank')">
+              <div class="buttin"><img style="margin-top: 4px;" src="/data/images/svg/idk.png"></div>
+          </a>
+          <a onclick="consol()">
+              <div class="buttin"><img id="svgg" style="margin-top: 4px;" src="/data/images/svg/inspect.svg"></div>
+          </a>
+      </div>
+      <div id="suggestions-box"></div>
+      <div class="buttin" id="toggleTopBar">
+          <img src="/data/images/svg/collapse.svg" style="width: 26px;" id="toggleIcon">
+      </div>
+  </div>
+    
+    <iframe src="null" id="fram"></iframe>
+    <script>
+      function toggleTopBar() {
+          const topSpot = document.querySelector('.top-spot');
+          const toggleIcon = document.getElementById('toggleIcon');
+
+          if (topSpot.style.height === '2.5vh') {
+              topSpot.style.height = '0';
+              toggleIcon.src = '/data/images/svg/expand.svg';
+          } else {
+              topSpot.style.height = '2.5vh';
+              toggleIcon.src = '/data/images/svg/collapse.svg';
+          }
+      }
+
+      document.getElementById('toggleTopBar').addEventListener('click', toggleTopBar);
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-79VER3NKGP"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-79VER3NKGP');
+    </script>
+    <script>
+      document.getElementById('uv-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          const urlInput = document.getElementById('uv-address');
+          const newUrl = urlInput.value;
+
+          const iframe = document.getElementById('fram');
+          iframe.src = newUrl;
+
+          document.getElementById('uv-form').onsubmit = function() {
+            const urlInput = document.getElementById('uv-address');
+            urlInput.value = "Loading.."
+          }
+
+          iframe.onload = function() {
+              const iframeSrc = iframe.src;
+              const serviceIndex = iframeSrc.indexOf('/service/');
+              if (serviceIndex !== -1) {
+                  const extractedText = iframeSrc.substring(serviceIndex + 9);
+                  const decodedText = __uv$config.decodeUrl(extractedText);
+                  urlInput.value = decodedText;
+              } else {
+                  console.error('The string "/service/" was not found in the iframe src.');
+              }
+          };
+      });
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const searchBox = document.getElementById('uv-address');
+        const suggestionsBox = document.getElementById('suggestions-box');
+
+        searchBox.addEventListener('input', async () => {
+            const query = searchBox.value.trim();
+
+            if (query.length > 0) {
+                const suggestions = await getSuggestions(query);
+                showSuggestions(suggestions);
+            } else {
+                suggestionsBox.style.display = 'none';
+            }
+        });
+
+        async function getSuggestions(query) {
+            const response = await fetch(`/go=${encodeURIComponent(query)}`);
+            const data = await response.json();
+            return data;
+        }
+
+        function showSuggestions(suggestions) {
+            suggestionsBox.innerHTML = '';
+
+            if (suggestions.length > 0) {
+                suggestionsBox.style.display = 'block';
+                suggestions.forEach(suggestion => {
+                    const suggestionItem = document.createElement('div');
+                    suggestionItem.classList.add('suggestion-item');
+                    suggestionItem.textContent = suggestion.phrase;
+                    suggestionItem.addEventListener('click', () => {
+                        searchBox.value = suggestion.phrase;
+                        suggestionsBox.style.display = 'none';
+                    });
+                    suggestionsBox.appendChild(suggestionItem);
+                });
+            } else {
+                suggestionsBox.style.display = 'none';
+            }
+        }
+      });
+    </script>
+    <script type="text/javascript">setIframe();</script>
+    <script src="./data/js/win.js"></script>
+</body>
+</html>

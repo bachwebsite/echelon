@@ -1,6 +1,6 @@
 .bubbly-div {
     width: 190px; /* Adjust the width as needed */
-    height: 225px; /* Increase the height for a taller card */
+    height: 40px; /* Increase the height for a taller card */
     background-color: #f0f0f0; /* Light background color */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */

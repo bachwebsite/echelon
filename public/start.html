@@ -7,29 +7,78 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Document</title>
     <style>
-        @font-face{font-family:'FONT2';src:url('./data/fonts/Echelon.ttf');}
+        @font-face {
+            font-family: 'FONT2';
+            src: url('./data/fonts/AlteHaasGroteskRegular.ttf');
+        }
+
         * {
             font-family: 'FONT2';
             margin: 0;
             padding: 0;
+            letter-spacing: 2px;
             overflow-y: hidden;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'FONT2';
+            background-color: #1f0030;
+        }
+        h1 {
+            position: relative;
+            display: block;
+            color: #ffffff;
+            text-align: center;
+            font-size: 150px;
+            margin-top: 35vh;
+            overflow: hidden;
+            
+        }
+        h6 {
+            position: absolute;
+            color: #200061;
+        }
+        .new-tag {
+            position: absolute;
+            top: 30px; /* Adjust based on your design */
+            right: -3px; /* Aligns it with the left side of the h1 */
+            background-color: red;
+            color: white;
+            padding: 2px 5px;
+            font-size: 30px;
+            border-radius: 3px;
+            transform: rotate(10deg);
+        }
+        div#circlebtn {
+            width: 80vw;
+            border-radius: 100px;
+            border: 1px solid white;
+            
+            display: inline-block;
+            cursor: pointer;
+        }
+        img#svgg{
+            width:  50px;
+            height: 50px;
+            filter: invert(100%);
+            margin: 20px;
+        }
+        #brea {
+            color:#6200979b;
+        }
+        #kium {
+            color:#6c22ff;
         }
     </style>
 </head>
-<body style="background-color: #4e0177;">
-    <center>
-        <h1 style="font-size: 150px; color: white; user-select: none;margin-top: calc(50vh - 150px);margin-bottom: none;font-family: 'FONT2';font-weight: 400;font-style: normal;letter-spacing: 10px;">breakium</h1>
-        <h1 style="font-size: 40px; color: lightgray; user-select: none; margin-top: none;font-family: 'FONT2';font-weight: 400;font-style: normal;letter-spacing: 2px;">blazing proxy for higher enterprises</h1>
-        <div id="centerandspace">
-            <img id="svgg" onclick="window.location.href = '/g'" style="margin-top: 4px; width: 50px;height: 50px;filter: invert(100%) sepia(4%) saturate(100%) hue-rotate(0deg) brightness(107%) contrast(104%);" src="/data/images/svg/game.svg">
-        </div>
-    </center>
-    <img src="./data/images/svg/wave.svg">
-    <script src="uv/uv.bundle.js"></script>
-    <script src="uv/uv.config.js"></script>
-    <script src="/uv/uv.sw.js"></script>
-    <script src="/dynamic/dynamic.config.js"></script>
-    <script src="./data/js/index.js"></script>
-    <script src="./data/js/win.js"></script>
+<body>
+    <h1><span id="brea">brea</span><span id="kium">kium</span><span class="new-tag">Update!</span></h1>
+    <h6>More updates soon. This visual will not be permenant!</h6>
+
+    <center style="position:absolute;bottom:1vh;left: 0;
+right: 0;margin-left: auto;margin-right: auto;"><div id="circlebtn"><img id="svgg" onclick="window.location.href = '/g'" src="/data/images/svg/game.svg"></div></center>
 </body>
 </html>
