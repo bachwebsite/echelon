@@ -2,11 +2,13 @@
   font-family: "FONT2";
   src: url("/data/fonts/AlteHaasGroteskRegular.ttf");
 }
+
 * {
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
+
 #fram {
   width: 100vw;
   height: 100vh;
@@ -14,16 +16,19 @@
   border: none;
   position: relative;
 }
+
 body {
   top: 50%;
   font-family: "FONT2", sans-serif;
   background: url("/data/images/loading.gif") no-repeat;
   transition: 0.5s;
 }
+
 a {
   color: inherit;
   text-decoration: none;
 }
+
 .top-spot {
   display: flex;
   width: 100vw;
@@ -42,6 +47,7 @@ a {
   transform: translate(-50%, -4vh);
   box-shadow: 0 0 20px #3a3a3a78;
 }
+
 .dropdown {
   position: absolute;
   display: none;
@@ -71,6 +77,7 @@ a {
   transform: translate(-50%, 0);
   display: flex;
 }
+
 .buttin {
   height: 26px;
   cursor: pointer;
@@ -78,6 +85,7 @@ a {
   transition: 0.3s;
   padding: 5px;
 }
+
 .buttin img {
   width: 26px;
   display: flex;
@@ -87,10 +95,12 @@ a {
   align-items: center;
   justify-content: center;
 }
+
 .buttin #svgg {
   filter: invert(100%) sepia(4%) saturate(100%) hue-rotate(293deg)
     brightness(107%) contrast(104%);
 }
+
 .buttin p {
   vertical-align: top;
   display: inline-flex;
@@ -105,6 +115,7 @@ a {
   margin-bottom: 8px;
   position: relative;
 }
+
 .slashapp_ {
   font-family: "FONT2", sans-serif;
   font-size: 16px;
@@ -120,12 +131,15 @@ a {
   z-index: 10001;
   position: relative;
 }
+
 .slashapp_:focus {
   outline: none;
 }
+
 #customCloakinput {
   display: none;
 }
+
 #suggestions-box {
   position: absolute;
   top: 40px; /* Adjusted top position */
@@ -138,6 +152,7 @@ a {
   display: none; /* Initially hidden */
   background-color: #ffffff;
 }
+
 .suggestion-item {
   padding: 10px;
   cursor: pointer;
@@ -145,6 +160,7 @@ a {
   border-bottom: 1px solid #ccc;
   background-color: #ffffff;
 }
+
 .suggestion-item:hover {
   background: #f0f0f0;
 }
@@ -153,7 +169,7 @@ a {
   vertical-align: center;
   font-family: 'FONT2';
   border-radius: 10px;
-  height:50%;
+  height: 50%;
   margin-top: 7px;
   height: 30px;
   text-align: center;
@@ -177,19 +193,26 @@ a {
   display: none;
 }
 
-#add-bookmark:hover {
-
-}
+#add-bookmark:hover {}
 
 /* Bookmark list styling */
 #bookmark-list {
+  display: flex;
   list-style-type: none; /* No bullets */
   padding: 0; /* Remove default padding */
-  margin-top: 4px; /* Spacing above */
+  margin: 0; /* Spacing above */
 }
 
 #bookmark-list li {
-  border-bottom: 1px solid #ddd; /* Separator for list items */
+  display: inline-flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  margin-right: 10px; /* Space between list items */
+  padding: 5px 10px; /* Padding inside each bookmark */
+  background-color: #1f0030; /* White background for each bookmark */
+  border: 1px solid #ddd; /* Border around each bookmark */
+  border-radius: 5px; /* Rounded corners for bookmarks */
   cursor: pointer; /* Pointer cursor */
   height: 30px;
 }
@@ -198,7 +221,49 @@ a {
   background-color: #f0f0f01f; /* Highlight on hover */
 }
 
+/* Search History Button */
+#search-history-button {
+  display: inline-flex; /* Aligns button inline with other elements */
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px; /* Space from other buttons */
+  cursor: pointer; /* Pointer cursor */
+  height: 30px;
+  padding: 5px;
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition */
+  font-family: "FONT2", sans-serif; /* Custom font */
+}
 
+#search-history-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Search History Container */
+#search-history-container {
+  display: none; /* Initially hidden */
+  position: fixed;
+  top: 10vh; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.9); /* Light background for contrast */
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  z-index: 10000; /* Ensure it's above other elements */
+  max-width: 300px; /* Limit width for better appearance */
+}
+
+#search-history-list {
+  list-style-type: none; /* No bullets */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* No margin */
+}
+
+/* Animation */
 @keyframes fadeIn {
   from {
     opacity: 0;

@@ -50,9 +50,9 @@
             <a onclick="consol()">
               <div class="buttin"><img id="svgg" style="margin-top: 4px;" src="/data/images/svg/inspect.svg"></div>
           </a>
-            <a onclick="toggleDropdown()">
-              <div class="buttin"><img style="margin-top: 4px;" src="./data/images/star.png"></div>
-          </a>
+          <a onclick="toggleDropdown()">
+            <div class="buttin"><img style="margin-top: 4px;" src="./data/images/star.png"></div>
+        </a>
             <button id="add-bookmark">+</button>
             <input type="text" id="bookmark-name" placeholder="Bookmark Name" />
             <ul id="bookmark-list"></ul>
@@ -64,33 +64,39 @@
                   <p>Dropdown Item 3</p>
               </div>
           </div>
+          <div id="search-history-container">
+            <h4>Search History</h4>
+            <ul id="search-history-list">
+                <!-- List items will be dynamically added here -->
+            </ul>
+            <button id="clear-history-btn">Clear History</button>
         </div>
-  
-        <div id="suggestions-box"></div>
+        </div>
         <div class="buttin" id="toggleTopBar">
             <img src="/data/images/svg/collapse.svg" style="width: 26px;" id="toggleIcon">
         </div>
+        <div id="suggestions-box"></div>
     </div>
       
     <iframe src="null" id="fram"></iframe>
 
-    <!-- Bookmark section -->
+    <!-- history section -->
     
-  
+    
     <!-- JavaScript to toggle dropdown -->
     <script>
         function toggleDropdown() {
             const add = document.getElementById("add-bookmark");
             const name = document.getElementById("bookmark-name");
-            if (add.style.display === "block") {
+            if (add.style.display === "inline-block") {
                 add.style.display = "none";
             } else {
-                add.style.display = "block";
+                add.style.display = "inline-block";
             }
-            if (name.style.display === "block") {
+            if (name.style.display === "inline-block") {
                 name.style.display = "none";
             } else {
-                name.style.display = "block";
+                name.style.display = "inline-block";
             }
         }
     </script>
@@ -99,13 +105,18 @@
         function toggleTopBar() {
             const topSpot = document.querySelector('.top-spot');
             const toggleIcon = document.getElementById('toggleIcon');
-  
-            if (topSpot.style.height === '2.5vh') {
+        
+            const currentHeight = window.getComputedStyle(topSpot).height;
+
+            if (currentHeight === '2.5vh' || topSpot.style.height === '2.5vh') {
+                console.log('if');
                 topSpot.style.height = '0vh';
-                toggleIcon.src = '/data/images/svg/collapse.svg';
-            } else {
-                topSpot.style.height = '2.5vh';
                 toggleIcon.src = '/data/images/svg/expand.svg';
+            } else {
+                console.log('else');
+                console.log(topSpot.style.height);
+                topSpot.style.height = '2.5vh';
+                toggleIcon.src = '/data/images/svg/collapse.svg';
             }
         }
   
@@ -133,6 +144,7 @@
     </script>
 
     <script>
+        /*
         document.getElementById('uv-form').addEventListener('submit', function(event) {
             event.preventDefault();
             const urlInput = document.getElementById('uv-address');
@@ -159,6 +171,7 @@
                 }
             };
         });
+        */
     </script>
   
     <script>
@@ -273,5 +286,6 @@
   
     <script type="text/javascript">setIframe();</script>
     <script src="./data/js/win.js"></script>
+    <script src="./data/js/urlupd.js"></script>
 </body>
 </html>

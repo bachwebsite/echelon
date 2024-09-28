@@ -35,6 +35,9 @@ app.get('/', (req, res) => {
 app.get('/g', (req, res) => {
   res.sendFile(path.join(process.cwd(), '/public/g.html'));
 });
+app.get('/a', (req, res) => {
+  res.sendFile(path.join(process.cwd(), '/public/a.html'));
+});
 app.get('/null', (req, res) => {
   res.sendFile(path.join(process.cwd(), '/public/start.html'));
 });
