@@ -1,12 +1,14 @@
 .bubbly-div {
     width: 190px; /* Adjust the width as needed */
-    height: 40px; /* Increase the height for a taller card */
-    background-color: #f0f0f0; /* Light background color */
+    height: 300px; /* Increase the height for a taller card */
+    background-color: #32014C; /* Light background color */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
     overflow: hidden; /* Ensure content fits within the card */
     text-align: center; /* Center the text and image */
-    margin: 16px; /* Space around the card */
+    margin-left: 16px; 
+    margin-right: 16px; 
+    margin-bottom: 16px; /* Space around the card */
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
@@ -28,10 +30,21 @@
     display: block;
     padding: 15px;
     font-size: 18px;
-    color: #333;
+    color: #8500cd;
     text-decoration: none;
 }
 
 .bubbly-div a:hover {
-    color: #007BFF;
+    color: #4a0071;
+}
+.bubbly-div img {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    border: 2px solid #8D5DA8;
+}
+#search {
+    display        : flex;
+    width          : 190px;
+    margin-bottom  : 16px; 
 }
