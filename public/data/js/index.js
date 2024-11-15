@@ -25,14 +25,17 @@ const input = document.querySelector("input");
 
 const swConfig = {
   'uv': { file: '/uv/sw.js', config: __uv$config },
-  
 };
+
+let swConfigSettings; // Define swConfigSettings globally
+
 function registerSW() {
   if (localStorage.getItem("registerSW") === "true") {
-    var proxySetting = localStorage.getItem('proxy') || 'uv';
-    let { file: swFile, config: swConfigSettings } = swConfig[proxySetting];
+    const proxySetting = localStorage.getItem('proxy') || 'uv';
+    const { file: swFile, config } = swConfig[proxySetting];
+    swConfigSettings = config; // Assign swConfigSettings here for global access
 
-    navigator.serviceWorker.register(swFile, { scope: swConfigSettings.prefix })
+    navigator.serviceWorker.register(swFile, { scope: config.prefix })
       .then((registration) => {
         console.log('ServiceWorker registration successful with scope: ', registration.scope);
       })
@@ -41,8 +44,6 @@ function registerSW() {
       });
   }
 }
-
-
 
 // crypts class definition
 class crypts {
@@ -87,52 +88,19 @@ function search(input) {
     }
   }
 }
-if ('serviceWorker' in navigator) {
-  var proxySetting = localStorage.getItem('proxy') || 'uv';
-  let swConfig = {
-    'uv': { file: '/uv/sw.js', config: __uv$config },
-    
-
-  };
-
-  let { file: swFile, config: swConfigSettings } = swConfig[proxySetting];
-
-  navigator.serviceWorker.register(swFile, { scope: swConfigSettings.prefix })
-    .then((registration) => {
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-      form.addEventListener('submit', async (event) => {
-        event.preventDefault();
-
-        let encodedUrl = swConfigSettings.prefix + crypts.encode(search(address.value));
-        sessionStorage.setItem("encodedUrl", encodedUrl);
-        const browseSetting = localStorage.getItem('browse');
-        const browseUrls = {
-          "go": "/",
-          "norm": encodedUrl
-        };
-
-        const urlToNavigate = browseUrls[browseSetting] || "/";
-        location.href = urlToNavigate;
-      });
-    })
-    .catch((error) => {
-      console.error('ServiceWorker registration failed:', error);
-    });
-}
-
 
 function launch(val) {
+  if (!val) {
+    console.error("Invalid URL input: value is undefined or empty.");
+    return;
+  }
+
   if ('serviceWorker' in navigator) {
-    let proxySetting = localStorage.getItem('proxy') || 'uv';
-    let swConfig = {
-      'uv': { file: '/uv/sw.js', config: __uv$config },
-      
-    };
+    const proxySetting = localStorage.getItem('proxy') || 'uv';
+    const { file: swFile, config } = swConfig[proxySetting];
+    swConfigSettings = config; // Ensure swConfigSettings is set
 
-    // Use the selected proxy setting or default to 'uv'
-    let { file: swFile, config: swConfigSettings } = swConfig[proxySetting];
-
-    navigator.serviceWorker.register(swFile, { scope: swConfigSettings.prefix })
+    navigator.serviceWorker.register(swFile, { scope: config.prefix })
       .then((registration) => {
         console.log('ServiceWorker registration successful with scope: ', registration.scope);
         let url = val.trim();
@@ -142,14 +110,14 @@ function launch(val) {
           url = "https://" + url;
         }
 
-        let encodedUrl = swConfigSettings.prefix + crypts.encode(url);
+        const encodedUrl = config.prefix + crypts.encode(url);
         sessionStorage.setItem("encodedUrl", encodedUrl);
         const browseSetting = localStorage.getItem('browse');
         const browseUrls = {
           "go": "/",
           "norm": encodedUrl
         };
-        const urlToNavigate = browseUrls["norm"]
+        const urlToNavigate = browseUrls["norm"];
         location.href = urlToNavigate;
       })
       .catch((error) => {
@@ -162,3 +130,33 @@ function ifUrl(val = "") {
   const urlPattern = /^(http(s)?:\/\/)?([\w-]+\.)+[\w]{2,}(\/.*)?$/;
   return urlPattern.test(val);
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("uv-form");
+
+  if (form) {
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+
+      if (!swConfigSettings) {
+        console.error("Service worker configuration not found.");
+        return;
+      }
+
+      const encodedUrl = swConfigSettings.prefix + crypts.encode(search(address.value));
+      sessionStorage.setItem("encodedUrl", encodedUrl);
+      const browseSetting = localStorage.getItem('browse');
+      const browseUrls = {
+        "go": "/",
+        "norm": encodedUrl
+      };
+
+      const urlToNavigate = browseUrls[browseSetting] || "/";
+      location.href = urlToNavigate;
+    });
+  } else {
+    console.error("Form element with ID 'uv-form' not found.");
+  }
+
+  registerSW();
+});

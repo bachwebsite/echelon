@@ -1,618 +1,2801 @@
-[
+{
+  "games": [
     {
-      "name": "Farming Simulator",
-      "directory": "/games/farming-sim/",
-      "image": "farming_simulator.png"
+      "name": "Penalty Shooters 2",
+      "directory": "https://physicsedu16.github.io/g2/class-627/",
+      "image": "./data/images/games/penalty-shooters-2.png"
     },
     {
-      "name": "Thorn Balloons",
-      "directory": "/games/thorn-balloons/",
-      "image": "thorn_balloons.png"
+      "name": "Highway Traffic",
+      "directory": "https://physicsedu16.github.io/g97/class-522/",
+      "image": "./data/images/games/highway-traffic.png"
     },
     {
-      "name": "Toss the Turtle",
-      "directory": "/games/tosstheturtle/",
-      "image": "toss_the_turtle.png"
+      "name": "Peppa Pig Basketball",
+      "directory": "https://physicsedu16.github.io/g3/class-318/",
+      "image": "./data/images/games/peppa-pig-basketball.png"
     },
     {
-      "name": "Tube Jumpers",
-      "directory": "/games/tube-jumpers/",
-      "image": "tube_jumpers.png"
+      "name": "Gunspin",
+      "directory": "https://physicsedu16.github.io/g5/class-533/",
+      "image": "./data/images/games/gunspin.png"
     },
     {
-      "name": "TV Static",
-      "directory": "/games/tv-static/",
-      "image": "tv_static.png"
+      "name": "Roblox",
+      "directory": "https://renderisgay.onrender.com/?app_pkg=com.roblox.client&partner=gamenora",
+      "image": "./data/images/games/roblox.png"
     },
     {
-      "name": "Twitch Tetris",
-      "directory": "/games/twitch-tetris/",
-      "image": "twitch_tetris.png"
+      "name": "Character AI",
+      "directory": "https://now.gg/apps/character-ai/5482/character-ai-chat-ask-create.html?utm_source=now.gg-partner&utm_medium=bot&utm_campaign=carl",
+      "image": "./data/images/games/character_ai.png"
     },
     {
-      "name": "Veloce",
-      "directory": "/games/veloce/",
-      "image": "veloce.png"
+      "name": "Fortnite",
+      "directory": "https://play.geforcenow.com/mall/#/deeplink?game-id=46bfab06-d864-465d-9e56-2d9e45cdee0a",
+      "image": "./data/images/games/fortnite.png"
     },
     {
-      "name": "Vex3",
-      "directory": "/games/vex3/",
-      "image": "vex3.png"
+      "name": "Beat Maker",
+      "directory": "https://splice.com/sounds/beatmaker",
+      "image": "./data/images/games/beat_maker.png"
     },
     {
-      "name": "Vex4",
-      "directory": "/games/vex4/",
-      "image": "vex4.png"
+      "name": "Farming Sim",
+      "directory": "https://www.pacogames.com/webgl/the-farmer-3d",
+      "image": "./data/images/games/farming_sim.png"
     },
     {
-      "name": "Vex5",
-      "directory": "/games/vex5/",
-      "image": "vex5.png"
+      "name": "kirka.io",
+      "directory": "https://kirka.io/",
+      "image": "./data/images/games/kirka.png"
     },
     {
-      "name": "Vex6",
-      "directory": "/games/vex6/",
-      "image": "vex6.png"
+      "name": "mk48.io",
+      "directory": "https://mk48.io/",
+      "image": "./data/images/games/mk48.png"
     },
     {
-      "name": "Synesthesia",
-      "directory": "/games/synesthesia/",
-      "image": "synesthesia.png"
+      "name": "Bandit.RIP",
+      "directory": "https://bandit.rip/",
+      "image": "./data/images/games/bandit.png"
     },
     {
-      "name": "Tactical Weapon Pack 2",
-      "directory": "/games/tactical-weapon-pack-2/",
-      "image": "tactical_weapon_pack_2.png"
+      "name": "Omega Layers",
+      "directory": "https://veprogames.github.io/omega-layers/",
+      "image": "./data/images/games/omega_layers.png"
     },
     {
-      "name": "Tactical Assassin 2",
-      "directory": "/games/tacticalassasin2/",
-      "image": "tactical_assassin_2.png"
-    },
-    {
-      "name": "Tank Trouble 2",
-      "directory": "/games/tank-trouble-2/",
-      "image": "tank_trouble_2.png"
-    },
-    {
-      "name": "Tanuke Sunset",
-      "directory": "/games/tanuke-sunset/",
-      "image": "tanuke_sunset.png"
-    },
-    {
-      "name": "Temple Run 2",
-      "directory": "/games/temple-run-2/",
-      "image": "temple_run_2.png"
-    },
-    {
-      "name": "The Final Earth",
-      "directory": "/games/the-final-earth/",
-      "image": "the_final_earth.png"
-    },
-    {
-      "name": "The Hotel",
-      "directory": "/games/the-hotel/",
-      "image": "the_hotel.png"
-    },
-    {
-      "name": "The Battle",
-      "directory": "/games/thebattle/",
-      "image": "the_battle.png"
-    },
-    {
-      "name": "The Heist",
-      "directory": "/games/theheist/",
-      "image": "the_heist.png"
-    },
-    {
-      "name": "This is the Only Level",
-      "directory": "/games/thisistheonlylevel/",
-      "image": "this_is_the_only_level.png"
-    },
-    {
-      "name": "Tiny Islands",
-      "directory": "/games/tiny-islands/",
-      "image": "tiny_islands.png"
-    },
-    {
-      "name": "Townscaper",
-      "directory": "/games/townscaper/",
-      "image": "townscaper.png"
-    },
-    {
-      "name": "Smash Karts",
-      "directory": "/games/smashkarts/",
-      "image": "smash_karts.png"
-    },
-    {
-      "name": "Soccer Skills",
-      "directory": "/games/soccer-skills/",
-      "image": "soccer_skills.png"
-    },
-    {
-      "name": "Soldier Legend",
-      "directory": "/games/soldier-legend/",
-      "image": "soldier_legend.png"
-    },
-    {
-      "name": "Solitaire",
-      "directory": "/games/solitaire/",
-      "image": "solitaire.png"
-    },
-    {
-      "name": "Sort the Court",
-      "directory": "/games/sort-the-court/",
-      "image": "sort_the_court.png"
-    },
-    {
-      "name": "Space Company",
-      "directory": "/games/space-company/",
-      "image": "space_company.png"
-    },
-    {
-      "name": "Space Garden",
-      "directory": "/games/spacegarden/",
-      "image": "space_garden.png"
-    },
-    {
-      "name": "Spinning Rat",
-      "directory": "/games/spinningrat/",
-      "image": "spinning_rat.png"
-    },
-    {
-      "name": "Stack Bump 3D",
-      "directory": "/games/stack-bump-3d/",
-      "image": "stack_bump_3d.png"
-    },
-    {
-      "name": "Stack",
-      "directory": "/games/stack/",
-      "image": "stack.png"
-    },
-    {
-      "name": "Starve",
-      "directory": "/games/starve/",
-      "image": "starve.png"
-    },
-    {
-      "name": "Station 141",
-      "directory": "/games/station-141/",
-      "image": "station_141.png"
-    },
-    {
-      "name": "Stick Archers",
-      "directory": "/games/stick-archers/",
-      "image": "stick_archers.png"
-    },
-    {
-      "name": "Stick Duel Battle",
-      "directory": "/games/stick-duel-battle/",
-      "image": "stick_duel_battle.png"
-    },
-    {
-      "name": "Stick Merge",
-      "directory": "/games/stick-merge/",
-      "image": "stick_merge.png"
-    },
-    {
-      "name": "Stick War",
-      "directory": "/games/stickwar/",
-      "image": "stick_war.png"
-    },
-    {
-      "name": "Storm The House 2",
-      "directory": "/games/stormthehouse2/",
-      "image": "storm_the_house_2.png"
-    },
-    {
-      "name": "Super Mario Construct",
-      "directory": "/games/supermarioconstruct/",
-      "image": "super_mario_construct.png"
-    },
-    {
-      "name": "Surviv.io",
-      "directory": "/games/surviv/",
-      "image": "surviv_io.png"
-    },
-    {
-      "name": "Sushi Unroll",
-      "directory": "/games/sushi-unroll/",
-      "image": "sushi_unroll.png"
-    },
-    {
-      "name": "Swerve",
-      "directory": "/games/swerve/",
-      "image": "swerve.png"
-    },
-    {
-      "name": "Riddle School 5",
-      "directory": "/games/riddleschool5/",
-      "image": "riddle_school_5.png"
-    },
-    {
-      "name": "Riddle Transfer",
-      "directory": "/games/riddletransfer/",
-      "image": "riddle_transfer.png"
-    },
-    {
-      "name": "Riddle Transfer 2",
-      "directory": "/games/riddletransfer2/",
-      "image": "riddle_transfer_2.png"
-    },
-    {
-      "name": "Rolling Forests",
-      "directory": "/games/rolling-forests/",
-      "image": "rolling_forests.png"
-    },
-    {
-      "name": "Rolly Vortex",
-      "directory": "/games/rolly-vortex/",
-      "image": "rolly_vortex.png"
-    },
-    {
-      "name": "Sand Game",
-      "directory": "/games/sand-game/",
-      "image": "sand_game.png"
-    },
-    {
-      "name": "Santy is Home",
-      "directory": "/games/santy-is-home/",
-      "image": "santy_is_home.png"
-    },
-    {
-      "name": "Scrap Metal",
-      "directory": "/games/scrap-metal/",
-      "image": "scrap_metal.png"
+      "name": "tetr.io",
+      "directory": "https://tetr.io/",
+      "image": "./data/images/games/tetr.png"
     },
     {
       "name": "Shell Shockers",
-      "directory": "/games/shellshockers/",
-      "image": "shell_shockers.png"
+      "directory": "https://www.1001juegos.com/juego/shellshockersio",
+      "image": "./data/images/games/shell_shockers.png"
     },
     {
-      "name": "Shot in the Dark",
-      "directory": "/games/shotinthedark/",
-      "image": "shot_in_the_dark.png"
+      "name": "Mergest Kingdom",
+      "directory": "https://html5.gamedistribution.com/b5203bfef51242c39690c761321d769f/",
+      "image": "./data/images/games/mergest_kingdom.png"
     },
     {
-      "name": "Shuttle Deck",
-      "directory": "/games/shuttledeck/",
-      "image": "shuttle_deck.png"
+      "name": "krunker.io",
+      "directory": "https://krunker.io/",
+      "image": "./data/images/games/krunker.png"
     },
     {
-      "name": "Sky Car Stunt",
-      "directory": "/games/sky-car-stunt/",
-      "image": "sky_car_stunt.png"
+      "name": "Pop Adventure",
+      "directory": "https://html5.gamedistribution.com/cf19c2cfc240400590a6415ff3256cf9/",
+      "image": "./data/images/games/pop_adventure.png"
     },
     {
-      "name": "Sleeping Beauty",
-      "directory": "/games/sleepingbeauty/",
-      "image": "sleeping_beauty.png"
+      "name": "Color Sort Mania",
+      "directory": "https://html5.gamedistribution.com/614e38c2129e4915afb9902c3238d350/",
+      "image": "./data/images/games/color_sort_mania.png"
+    },
+    {
+      "name": "krew.io",
+      "directory": "https://krew.io/",
+      "image": "./data/images/games/krew.png"
+    },
+    {
+      "name": "bloxd.io",
+      "directory": "https://bloxd.io/",
+      "image": "./data/images/games/bloxd.png"
+    },
+    {
+      "name": "digdig.io",
+      "directory": "https://digdig.io/",
+      "image": "./data/images/games/digdig.png"
+    },
+    {
+      "name": "snowball.io",
+      "directory": "https://snowball-io.io/",
+      "image": "./data/images/games/snowball.png"
+    },
+    {
+      "name": "craftnite.io",
+      "directory": "https://craftnite.io/",
+      "image": "./data/images/games/craftnite.png"
+    },
+    {
+      "name": "Cuphead Scratch",
+      "directory": "https://turbowarp.org/178944041/embed?autoplay&addons=remove-curved-stage-border",
+      "image": "./data/images/games/cuphead_scratch.png"
+    },
+    {
+      "name": "superhex.io",
+      "directory": "https://superhex.io/",
+      "image": "./data/images/games/superhex.png"
+    },
+    {
+      "name": "lolbeans.io",
+      "directory": "https://lolbeans.io/",
+      "image": "./data/images/games/lolbeans.png"
+    },
+    {
+      "name": "Soccer Physics",
+      "directory": "https://html5-games.io/game/soccer-physics/",
+      "image": "./data/images/games/soccer_physics.png"
+    },
+    {
+      "name": "zombs.io",
+      "directory": "https://zombs.io/",
+      "image": "./data/images/games/zombs.png"
+    },
+    {
+      "name": "zombsroyale.io",
+      "directory": "https://zombsroyale.io/",
+      "image": "./data/images/games/zombsroyale.png"
+    },
+    {
+      "name": "venge.io",
+      "directory": "https://venge.io/",
+      "image": "./data/images/games/venge.png"
+    },
+    {
+      "name": "gobattle.io",
+      "directory": "https://gobattle.io/#!",
+      "image": "./data/images/games/gobattle.png"
+    },
+    {
+      "name": "surviv.io",
+      "directory": "https://surviv.io/",
+      "image": "./data/images/games/surviv.png"
+    },
+    {
+      "name": "ev.io",
+      "directory": "https://ev.io/",
+      "image": "./data/images/games/ev.png"
+    },
+    {
+      "name": "tinytanks.io",
+      "directory": "https://tinytanks.io/",
+      "image": "./data/images/games/tinytanks.png"
+    },
+    {
+      "name": "Tag 2",
+      "directory": "https://2bb43ce0-0f5c-4c64-a308-49287cf65ce5.poki-gdn.com/84f13d5c-560b-4e18-a3ce-4a70be249890/index.html?country=US&ccpaApplies=0&url_referrer=https%3A%2F%2Fpoki.com%2F&tag=pg-v5.12.0+ba2dfab89b1bbae2390270f7e3b56d69717d08ea&site_id=3&iso_lang=en&poki_url=https%3A%2F%2Fpoki.com%2Fen%2Fg%2Ftag-2&gdhoist=yes&nonPersonalized=n&familyFriendly=n&categories=2%2C3%2C9%2C48%2C76%2C96%2C228%2C750%2C903%2C1126%2C1140%2C1141%2C1147%2C1163%2C1188&special_condition=landing&game_id=2bb43ce0-0f5c-4c64-a308-49287cf65ce5&game_version_id=84f13d5c-560b-4e18-a3ce-4a70be249890&usertype=new",
+      "image": "./data/images/games/tag_2.png"
     },
     {
       "name": "Slope",
-      "directory": "/games/slope/",
-      "image": "slope.png"
+      "directory": "https://storage.y8.com/y8-studio/unity_webgl/bitlaslt/slope_v_1_2_5/?key=9757549&value=80527",
+      "image": "./data/images/games/slope.png"
     },
     {
-      "name": "Slope Ball",
-      "directory": "/games/slope-ball/",
-      "image": "slope_ball.png"
+      "name": "Blade Ball",
+      "directory": "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://leogd.github.io/bladeballgame.io.xml&container=ig",
+      "image": "./data/images/games/blade_ball.png"
     },
     {
-      "name": "Snowboarding",
-      "directory": "/games/snowboarding/",
-      "image": "snowboarding.png"
+      "name": "12 Minibattles",
+      "directory": "https://cdn.naijaloaded.com.ng/12minibattles/index.html",
+      "image": "./data/images/games/12_minibattles.png"
     },
     {
-      "name": "Super Mario 63",
-      "directory": "/games/super-mario-63/",
-      "image": "super_mario_63.png"
+      "name": "Thorn Balloons",
+      "directory": "/data/g/thorn-balloons/",
+      "image": "./data/images/games/thorn-balloons.png"
     },
     {
-      "name": "Super Mario",
-      "directory": "/games/super-mario/",
-      "image": "super_mario.png"
+      "name": "Toss the Turtle",
+      "directory": "/data/g/tosstheturtle/",
+      "image": "./data/images/games/tosstheturtle.png"
     },
     {
-      "name": "Super Mario Crossover",
-      "directory": "/games/super-mario-crossover/",
-      "image": "super_mario_crossover.png"
+      "name": "Tube Jumpers",
+      "directory": "/data/g/tube-jumpers/",
+      "image": "./data/images/games/tube-jumpers.png"
     },
     {
-        "name": "Suika Game",
-        "directory": "/games/suika/",
-        "image_file": "suika_game.png"
+      "name": "TV Static",
+      "directory": "/data/g/tv-static/",
+      "image": "./data/images/games/tv-static.png"
     },
     {
-        "name": "Creative Kill Chamber",
-        "directory": "/games/creativekillchamber/",
-        "image_file": "creative_kill_chamber.png"
+      "name": "Twitch Tetris",
+      "directory": "/data/g/twitch-tetris/",
+      "image": "./data/images/games/twitch-tetris.png"
     },
     {
-        "name": "Cubefield",
-        "directory": "/games/cubefield/",
-        "image_file": "cubefield.png"
+      "name": "Veloce",
+      "directory": "/data/g/veloce/",
+      "image": "./data/images/games/veloce.png"
     },
     {
-        "name": "Big Tower Tiny Square",
-        "directory": "/games/btts/",
-        "image_file": "big_tower_tiny_square.png"
+      "name": "Vex3",
+      "directory": "/data/g/vex3/",
+      "image": "./data/images/games/vex3.png"
     },
     {
-        "name": "Cannon Basketball 4",
-        "directory": "/games/cannon-basketball-4/",
-        "image_file": "cannon_basketball_4.png"
+      "name": "Vex4",
+      "directory": "/data/g/vex4/",
+      "image": "./data/images/games/vex4.png"
     },
     {
-        "name": "Canyon Defense",
-        "directory": "/games/canyondefense/",
-        "image_file": "canyon_defense.png"
+      "name": "Vex5",
+      "directory": "/data/g/vex5/",
+      "image": "./data/images/games/vex5.png"
     },
     {
-        "name": "Cars Simulator",
-        "directory": "/games/cars-simulator/",
-        "image_file": "cars_simulator.png"
+      "name": "Vex6",
+      "directory": "/data/g/vex6/",
+      "image": "./data/images/games/vex6.png"
     },
     {
-        "name": "Champion Island",
-        "directory": "/games/champion-island/",
-        "image_file": "champion_island.png"
+      "name": "Synesthesia",
+      "directory": "/data/g/synesthesia/",
+      "image": "./data/images/games/synesthesia.png"
     },
     {
-        "name": "Chill Radio",
-        "directory": "/games/chill-radio/",
-        "image_file": "chill_radio.png"
+      "name": "Double Wires",
+      "directory": "/data/g/doublewires/",
+      "image": "./data/images/games/doublewires.png"
     },
     {
-        "name": "Chrome Dino",
-        "directory": "/games/chrome-dino/",
-        "image_file": "chrome_dino.png"
+      "name": "Dragon VS Bricks",
+      "directory": "/data/g/dragonvsbricks/",
+      "image": "./data/images/games/dragon-vs-bricks.png"
     },
     {
-        "name": "Connect 3",
-        "directory": "/games/connect3/",
-        "image_file": "connect_3.png"
+      "name": "Draw the Hill",
+      "directory": "/data/g/drawthehill/",
+      "image": "./data/images/games/draw-the-hill.png"
     },
     {
-        "name": "Core Ball",
-        "directory": "/games/core-ball/",
-        "image_file": "core_ball.png"
+      "name": "Duck Life 1",
+      "directory": "/data/g/ducklife1/",
+      "image": "./data/images/games/duck-life.png"
     },
     {
-        "name": "Table Tennis Ultimate Tournament",
-        "directory": "/games/cnpingpong/",
-        "image_file": "table_tennis_ultimate_tournament.png"
+      "name": "Duck Life 2",
+      "directory": "/data/g/ducklife2/",
+      "image": "./data/images/games/duck-life-2.png"
     },
     {
-        "name": "CraftMine",
-        "directory": "/games/craftmine/",
-        "image_file": "craftmine.png"
+      "name": "Duck Life 3",
+      "directory": "/data/g/ducklife3/",
+      "image": "./data/images/games/duck-life-3.png"
     },
     {
-        "name": "Big NEON Tower Tiny Square",
-        "directory": "/games/bntts/",
-        "image_file": "big_neon_tower_tiny_square.png"
+      "name": "Duck Life 4",
+      "directory": "/data/g/ducklife4/",
+      "image": "./data/images/games/duck-life-4.png"
     },
     {
-        "name": "Bob the Robber 2",
-        "directory": "/games/bobtherobber2/",
-        "image_file": "bob_the_robber_2.png"
+      "name": "Edge Surf",
+      "directory": "/data/g/edgesurf/",
+      "image": "./data/images/games/edge-surf.png"
     },
     {
-        "name": "Box Head",
-        "directory": "/games/boxhead2play/",
-        "image_file": "box_head.png"
+      "name": "Elastic Man",
+      "directory": "/data/g/elasticman/",
+      "image": "./data/images/games/elastic-man.png"
     },
     {
-        "name": "Big Red Button",
-        "directory": "/games/bigredbutton/",
-        "image_file": "big_red_button.png"
+      "name": "Endless War 3",
+      "directory": "/data/g/endlesswar3/",
+      "image": "./data/images/games/endless-war-3.png"
     },
     {
-        "name": "Black Hole Square",
-        "directory": "/games/blackholesquare/",
-        "image_file": "black_hole_square.png"
+      "name": "Evil Glitch",
+      "directory": "/data/g/evilglitch/",
+      "image": "./data/images/games/evil-glitch.png"
     },
     {
-        "name": "Black Knight",
-        "directory": "/games/blackknight/",
-        "image_file": "black_knight.png"
+      "name": "Evolution",
+      "directory": "/data/g/evolution/",
+      "image": "./data/images/games/evolution.png"
     },
     {
-        "name": "1",
-        "directory": "/games/1/",
-        "image_file": "1.png"
+      "name": "Exo",
+      "directory": "/data/g/exo/",
+      "image": "./data/images/games/exo.png"
     },
     {
-        "name": "100ng",
-        "directory": "/games/100ng/",
-        "image_file": "100ng.png"
+      "name": "Factory Balls",
+      "directory": "/data/g/factoryballs/",
+      "image": "./data/images/games/factory-balls.png"
     },
     {
-        "name": "1v1space",
-        "directory": "/games/1v1space/",
-        "image_file": "1v1space.png"
+      "name": "Fair Squares",
+      "directory": "/data/g/fairsquares/",
+      "image": "./data/images/games/fair-squares.png"
     },
     {
-        "name": "2048-multitask",
-        "directory": "/games/2048-multitask/",
-        "image_file": "2048_multitask.png"
-    },
-    {
-        "name": "Offline Paradise",
-        "directory": "/games/OfflineParadise/",
-        "image_file": "offline_paradise.png"
-    },
-    {
-        "name": "Stickman Survival",
-        "directory": "/games/Stickman-Survival/",
-        "image_file": "stickman_survival.png"
-    },
-    {
-        "name": "Adrenaline Challenge",
-        "directory": "/games/adrenalinechallenge/",
-        "image_file": "adrenaline_challenge.png"
-    },
-    {
-        "name": "Ages of Conflict",
-        "directory": "/games/ages-of-conflict/",
-        "image_file": "ages_of_conflict.png"
-    },
-    {
-        "name": "Alien Hominid",
-        "directory": "/games/alienhominid/",
-        "image_file": "alien_hominid.png"
-    },
-    {
-        "name": "Amidst the Clouds",
-        "directory": "/games/amidst-the-clouds/",
-        "image_file": "amidst_the_clouds.png"
-    },
-    {
-        "name": "Angry Sharks",
-        "directory": "/games/angry-sharks/",
-        "image_file": "angry_sharks.png"
-    },
-    {
-        "name": "Aquapark Slides",
-        "directory": "/games/aquapark-slides/",
-        "image_file": "aquapark_slides.png"
-    },
-    {
-        "name": "Astray",
-        "directory": "/games/astray/",
-        "image_file": "astray.png"
-    },
-    {
-        "name": "Awesome Tanks 2",
-        "directory": "/games/awesometanks2/",
-        "image_file": "awesome_tanks_2.png"
-    },
-    {
-        "name": "Basketball Stars",
-        "directory": "/games/basketball-stars/",
-        "image_file": "basketball_stars.png"
-    },
-    {
-        "name": "Basket Bros . io",
-        "directory": "/games/basketbros-io/",
-        "image_file": "basket_bros_io.png"
-    },
-    {
-        "name": "Battle for Gondor",
-        "directory": "/games/battleforgondor/",
-        "image_file": "battle_for_gondor.png"
-    },
-    {
-        "name": "Case Clicker",
-        "directory": "/games/case-clicker/",
-        "image_file": "case_clicker.png"
-    },
-    {
-        "name": "Tag",
-        "directory": "/games/tag/",
-        "image_file": "tag.png"
-    },
-    {
-        "name": "Funny Shooter 1",
-        "directory": "/games/funny-shooter/",
-        "image_file": "funny_shooter_1.png"
-    },
-    {
-        "name": "Getaway Shootout",
-        "directory": "/games/getaway-shootout/",
-        "image_file": "getaway_shootout.png"
-    },
-    {
-        "name": "Funny Shooter 2",
-        "directory": "/games/funny-shooter-2/",
-        "image_file": "funny_shooter_2.png"
-    },
-    {
-        "name": "OvO 1",
-        "directory": "/games/ovo/",
-        "image_file": "ovo_1.png"
-    },
-    {
-        "name": "Drift Hunters",
-        "directory": "/games/drift-hunters/",
-        "image_file": "drift_hunters.png"
-    },
-    {
-        "name": "Flappy Bird",
-        "directory": "/games/flappy-bird/",
-        "image_file": "flappy_bird.png"
-    },
-    {
-        "name": "Line Rider",
-        "directory": "/games/line-rider/",
-        "image_file": "line_rider.png"
-    },
-    {
-        "name": "Rooftop Snipers",
-        "directory": "/games/rooftop-snipers/",
-        "image_file": "rooftop_snipers.png"
-    },
-    {
-        "name": "Retro Bowl College",
-        "directory": "/games/retro-bowl-college/",
-        "image_file": "retro_bowl_college.png"
-    },
-    {
-        "name": "Rocket League",
-        "directory": "/games/rocket-league/",
-        "image_file": "rocket_league.png"
-    },
-    {
-        "name": "We Become What We Behold",
-        "directory": "/games/we-become-what-we-behold/",
-        "image_file": "we_become_what_we_behold.png"
-    },
-    {
-        "name": "Weave Silk",
-        "directory": "/games/weave-silk/",
-        "image_file": "weave_silk.png"
-    },
-    {
-        "name": "Run 3",
-        "directory": "/games/run-3/",
-        "image_file": "run_3.png"
-    },
-    {
-        "name": "Russian Car Driver",
-        "directory": "/games/russian-car-driver/",
-        "image_file": "russian_car_driver.png"
-    },
-    {
-        "name": "Windows 11 Simulator",
-        "directory": "/games/windows-11/",
-        "image_file": "windows_11_simulator.png"
-    },
-    {
-        "name": "Wordle",
-        "directory": "/games/wordle/",
-        "image_file": "wordle.png"
-    },
-    {
-        "name": "Zombopocalypse",
-        "directory": "/games/zombopocalypse/",
-        "image_file": "zombopocalypse.png"
-    },
-    {
-        "name": "Little Alchemy",
-        "directory": "/games/little-alchemy/",
-        "image_file": "little_alchemy.png"
-    },
-    {
-        "name": "BasketBall Pro",
-        "directory": "/games/basketball-pro/",
-        "image_file": "basketball_pro.png"
-    },
-    {
-        "name": "Challenge",
-        "directory": "/games/challenge/",
-        "image_file": "challenge.png"
-    }
-  ]
-  
+      "name": "Fancy Pants Adventures",
+      "directory": "/data/g/fancypantsadventure/",
+      "image": "./data/images/games/fancy-pants-adventure.png"
+    },
+    {
+      "name": "Fake Virus",
+      "directory": "/data/g/fakevirus/",
+      "image": "./data/images/games/fake-virus.png"
+    },
+    {
+      "name": "FireBoy and WaterGirl",
+      "directory": "/data/g/fireboywatergirl/",
+      "image": "./data/images/games/fireboy-and-watergirl.png"
+    },
+    {
+      "name": "Flappy 2048",
+      "directory": "/data/g/flappy2048/",
+      "image": "./data/images/games/flappy-2048.png"
+    },
+    {
+      "name": "Flash Tetris",
+      "directory": "/data/g/flashtetris/",
+      "image": "./data/images/games/flash-tetris.png"
+    },
+    {
+      "name": "Five Nights at Winstons",
+      "directory": "/data/g/fnaw/",
+      "image": "./data/images/games/fnaw.png"
+    },
+    {
+      "name": "Froggy's Battle",
+      "directory": "/data/g/froggysbattle/",
+      "image": "./data/images/games/froggys-battle.png"
+    },
+    {
+      "name": "Fruit Ninja",
+      "directory": "/data/g/fruitninja/",
+      "image": "./data/images/games/fruit-ninja.png"
+    },
+    {
+      "name": "Frying Nemo",
+      "directory": "/data/g/fryingnemo/",
+      "image": "./data/images/games/frying-nemo.png"
+    },
+    {
+
+      "name": "Game Inside a Game",
+
+      "directory": "/data/g/gameinside/",
+
+      "image": "./data/images/games/giag.png"
+
+  },
+
+  {
+
+      "name": "Generic Fishing Game",
+
+      "directory": "/data/g/genericfishinggame/",
+
+      "image": "./data/images/games/gfg.png"
+
+  },
+
+  {
+
+      "name": "George and the Printer",
+
+      "directory": "/data/g/georgeandtheprinter/",
+
+      "image": "./data/images/games/gatp.png"
+
+  },
+
+  {
+
+      "name": "Gimme the Airpod",
+
+      "directory": "/data/g/gimmetheairpod/",
+
+      "image": "./data/images/games/gimme-the-airpod.png"
+
+  },
+
+  {
+
+      "name": "Glass City",
+
+      "directory": "/data/g/glasscity/",
+
+      "image": "./data/images/games/glass-city.png"
+
+  },
+
+  {
+
+      "name": "Go Ball",
+
+      "directory": "/data/g/goball/",
+
+      "image": "./data/images/games/go-ball.png"
+
+  },
+
+  {
+
+      "name": "Goodnight",
+
+      "directory": "/data/g/goodnight/",
+
+      "image": "./data/images/games/goodnight.png"
+
+  },
+
+  {
+
+      "name": "Google Feud",
+
+      "directory": "/data/g/googlefeud/",
+
+      "image": "./data/images/games/google-feud.png"
+
+  },
+
+  {
+
+      "name": "Gravity Soccer",
+
+      "directory": "/data/g/gravitysoccer/",
+
+      "image": "./data/images/games/gravity-soccer.png"
+
+  },
+
+  {
+
+      "name": "Greybox",
+
+      "directory": "/data/g/greybox/",
+
+      "image": "./data/images/games/greybox.png"
+
+  },
+
+  {
+
+      "name": "GrindCraft",
+
+      "directory": "/data/g/grindcraft/",
+
+      "image": "./data/images/games/grindcraft.png"
+
+  },
+
+  {
+
+      "name": "Hacker Type",
+
+      "directory": "/data/g/hackertype/",
+
+      "image": "./data/images/games/hacker-type.png"
+
+  },
+
+  {
+
+      "name": "Handshakes",
+
+      "directory": "/data/g/handshakes/",
+
+      "image": "./data/images/games/handshakes.png"
+
+  },
+
+  {
+
+      "name": "Happy Hop",
+
+      "directory": "/data/g/happyhop/",
+
+      "image": "./data/images/games/happy-hop.png"
+
+  },
+
+  {
+
+      "name": "Hover Bots Arena",
+
+      "directory": "/data/g/hba/",
+
+      "image": "./data/images/games/hover-bots-arena.png"
+
+  },
+
+  {
+
+      "name": "Helicopter",
+
+      "directory": "/data/g/helicopter/",
+
+      "image": "./data/images/games/helicopter.png"
+
+  },
+
+  {
+
+      "name": "Hex Empire",
+
+      "directory": "/data/g/hexempire/",
+
+      "image": "./data/images/games/hex-empire.png"
+
+  },
+
+  {
+
+      "name": "Hextris",
+
+      "directory": "/data/g/hextris/",
+
+      "image": "./data/images/games/hextris.png"
+
+  },
+
+  {
+
+      "name": "Suika Game",
+
+      "directory": "/data/g/suika/",
+
+      "image": "./data/images/games/suika-game.png"
+
+  },
+
+  {
+
+      "name": "Creative Kill Chamber",
+
+      "directory": "/data/g/creativekillchamber/",
+
+      "image": "./data/images/games/creative-kill-chamber.png"
+
+  },
+
+  {
+
+      "name": "Cubefield",
+
+      "directory": "/data/g/cubefield/",
+
+      "image": "./data/images/games/cubefield.png"
+
+  },
+
+  {
+
+      "name": "Big Tower Tiny Square",
+
+      "directory": "/data/g/btts/",
+
+      "image": "./data/images/games/btts.png"
+
+  },
+
+  {
+
+      "name": "Cannon Basketball 4",
+
+      "directory": "/data/g/cannon-basketball-4/",
+
+      "image": "./data/images/games/cannon-basketball-4.png"
+
+  },
+
+  {
+
+      "name": "Canyon Defense",
+
+      "directory": "/data/g/canyondefense/",
+
+      "image": "./data/images/games/canyon-defense.png"
+
+  },
+
+  {
+
+      "name": "Cars Simulator",
+
+      "directory": "/data/g/cars-simulator/",
+
+      "image": "./data/images/games/cars-simulator.png"
+
+  },
+
+  {
+
+      "name": "Champion Island",
+
+      "directory": "/data/g/champion-island/",
+
+      "image": "./data/images/games/champion-island.png"
+
+  },
+
+  {
+
+      "name": "Chill Radio",
+
+      "directory": "/data/g/chill-radio/",
+
+      "image": "./data/images/games/chill-radio.png"
+
+  },
+
+  {
+
+      "name": "Chrome Dino",
+
+      "directory": "/data/g/chrome-dino/",
+
+      "image": "./data/images/games/chrome-dino.png"
+
+  },
+
+  {
+
+      "name": "Connect 3",
+
+      "directory": "/data/g/connect3/",
+
+      "image": "./data/images/games/connect-3.png"
+
+  },
+
+  {
+
+      "name": "Core Ball",
+
+      "directory": "/data/g/core-ball/",
+
+      "image": "./data/images/games/core-ball.png"
+
+  },
+
+  {
+
+      "name": "Table Tennis Ultimate Tournament",
+
+      "directory": "/data/g/cnpingpong/",
+
+      "image": "./data/images/games/ttut.png"
+
+  },
+
+  {
+
+      "name": "CraftMine",
+
+      "directory": "/data/g/craftmine/",
+
+      "image": "./data/images/games/craftmine.png"
+
+  },
+
+  {
+
+      "name": "Big NEON Tower Tiny Square",
+
+      "directory": "/data/g/bntts/",
+
+      "image": "./data/images/games/bntts.png"
+
+  },
+
+  {
+
+      "name": "Bob the Robber 2",
+
+      "directory": "/data/g/bobtherobber2/",
+
+      "image": "./data/images/games/bob-the-robber-2.png"
+
+  },
+
+  {
+
+      "name": "Box Head",
+
+      "directory": "/data/g/boxhead2play/",
+
+      "image": "./data/images/games/box-head.png"
+
+  },
+
+  {
+
+      "name": "Big Red Button",
+
+      "directory": "/data/g/bigreddiv/",
+
+      "image": "./data/images/games/big-red-button.png"
+
+  },
+
+  {
+
+      "name": "Black Hole Square",
+
+      "directory": "/data/g/blackholesquare/",
+
+      "image": "./data/images/games/black-hole-square.png"
+
+  },
+
+  {
+
+      "name": "Black Knight",
+
+      "directory": "/data/g/blackknight/",
+
+      "image": "./data/images/games/black-knight.png"
+
+  },
+
+  {
+
+      "name": "1",
+
+      "directory": "/data/g/1/",
+
+      "image": "./data/images/games/1.png"
+
+  },
+
+  {
+
+      "name": "100ng",
+
+      "directory": "/data/g/100ng/",
+
+      "image": "./data/images/games/100ng.png"
+
+  },
+
+  {
+
+      "name": "1v1space",
+
+      "directory": "/data/g/1v1space/",
+
+      "image": "./data/images/games/1v1space.png"
+
+  },
+
+  {
+
+      "name": "2048-multitask",
+
+      "directory": "/data/g/2048-multitask/",
+
+      "image": "./data/images/games/2048-multitask.png"
+
+  },
+
+  {
+
+      "name": "Offline Paradise",
+
+      "directory": "/data/g/OfflineParadise/",
+
+      "image": "./data/images/games/offline-paradise.png"
+
+  },
+
+  {
+
+      "name": "Stickman Survival",
+
+      "directory": "/data/g/Stickman-Survival/",
+
+      "image": "./data/images/games/stickman-survival.png"
+
+  },
+
+  {
+
+      "name": "Adrenaline Challenge",
+
+      "directory": "/data/g/adrenalinechallenge/",
+
+      "image": "./data/images/games/adrenaline-challenge.png"
+
+  },
+
+  {
+
+      "name": "Ages of Conflict",
+
+      "directory": "/data/g/ages-of-conflict/",
+
+      "image": "./data/images/games/ages-of-conflict.png"
+
+  },
+
+  {
+
+      "name": "Alien Hominid",
+
+      "directory": "/data/g/alienhominid/",
+
+      "image": "./data/images/games/alien-hominid.png"
+
+  },
+
+  {
+
+      "name": "Amidst the Clouds",
+
+      "directory": "/data/g/amidst-the-clouds/",
+
+      "image": "./data/images/games/amidst-the-clouds.png"
+
+  },
+
+  {
+
+      "name": "Angry Sharks",
+
+      "directory": "/data/g/angry-sharks/",
+
+      "image": "./data/images/games/angry-sharks.png"
+
+  },
+
+  {
+
+      "name": "Aquapark Slides",
+
+      "directory": "/data/g/aquapark-slides/",
+
+      "image": "./data/images/games/aquapark-slides.png"
+
+  },
+
+  {
+
+      "name": "Astray",
+
+      "directory": "/data/g/astray/",
+
+      "image": "./data/images/games/astray.png"
+
+  },
+
+  {
+
+      "name": "Awesome Tanks 2",
+
+      "directory": "/data/g/awesometanks2/",
+
+      "image": "./data/images/games/awesome-tanks-2.png"
+
+  },
+
+  {
+
+      "name": "Basketball Stars",
+
+      "directory": "/data/g/basketball-stars/",
+
+      "image": "./data/images/games/basketball-stars.png"
+
+  },
+
+  {
+
+      "name": "Basket Bros . io",
+
+      "directory": "/data/g/basketbros-io/",
+
+      "image": "./data/images/games/basketbros-io.png"
+
+  },
+
+  {
+
+      "name": "Battle for Gondor",
+
+      "directory": "/data/g/battleforgondor/",
+
+      "image": "./data/images/games/battle-for-gondor.png"
+
+  },
+
+  {
+
+      "name": "Case Clicker",
+
+      "directory": "/data/g/case-clicker/",
+
+      "image": "./data/images/games/case-clicker.png"
+
+  },
+
+  {
+
+      "name": "Tag",
+
+      "directory": "/data/g/tag/",
+
+      "image": "./data/images/games/tag.png"
+
+  },
+
+  {
+
+      "name": "Funny Shooter 1",
+
+      "directory": "/data/g/funny-shooter/",
+
+      "image": "./data/images/games/funny-shooter-1.png"
+
+  },
+
+  {
+
+      "name": "Getaway Shootout",
+
+      "directory": "/data/g/getaway-shootout/",
+
+      "image": "./data/images/games/getaway-shootout.png"
+
+  },
+
+  {
+
+      "name": "Funny Shooter 2",
+
+      "directory": "/data/g/funny-shooter-2/",
+
+      "image": "./data/images/games/funny-shooter-2.png"
+
+  },
+
+  {
+
+      "name": "OvO 1",
+
+      "directory": "/data/g/ovo/",
+
+      "image": "./data/images/games/ovo.png"
+
+  },
+
+  {
+
+      "name": "Drift Hunters",
+
+      "directory": "/data/g/drift-hunters/",
+
+      "image": "./data/images/games/drift-hunters.png"
+
+  },
+
+  {
+
+      "name": "Flappy Bird",
+
+      "directory": "/data/g/flappy-bird/",
+
+      "image": "./data/images/games/flappy-bird.png"
+
+  },
+
+  {
+
+      "name": "Line Rider",
+
+      "directory": "/data/g/line-rider/",
+
+      "image": "./data/images/games/line-rider.png"
+
+  },
+
+  {
+
+      "name": "Rooftop Snipers",
+
+      "directory": "/data/g/rooftop-snipers/",
+
+      "image": "./data/images/games/rooftop-snipers.png"
+
+  },
+
+  {
+
+      "name": "Retro Bowl College",
+
+      "directory": "/data/g/retro-bowl-college/",
+
+      "image": "./data/images/games/retro-bowl-college.png"
+
+  },
+
+  {
+
+      "name": "Rocket League",
+
+      "directory": "/data/g/rocket-league/",
+
+      "image": "./data/images/games/rocket-league.png"
+
+  },
+
+  {
+
+      "name": "We Become What We Behold",
+
+      "directory": "/data/g/we-become-what-we-behold/",
+
+      "image": "./data/images/games/we-become-what-we-behold.png"
+
+  },
+
+  {
+
+      "name": "Weave Silk",
+
+      "directory": "/data/g/weave-silk/",
+
+      "image": "./data/images/games/weave-silk.png"
+
+  },
+
+  {
+
+      "name": "Run 3",
+
+      "directory": "/data/g/run-3/",
+
+      "image": "./data/images/games/run-3.png"
+
+  },
+
+  {
+
+      "name": "Russian Car Driver",
+
+      "directory": "/data/g/russian-car-driver/",
+
+      "image": "./data/images/games/russian-car-driver.png"
+
+  },
+
+  {
+
+      "name": "Windows 11 Simulator",
+
+      "directory": "/data/g/windows-11/",
+
+      "image": "./data/images/games/windows-11-simulator.png"
+
+  },
+
+  {
+
+      "name": "Wordle",
+
+      "directory": "/data/g/wordle/",
+
+      "image": "./data/images/games/wordle.png"
+
+  },
+
+  {
+
+      "name": "Zombopocalypse",
+
+      "directory": "/data/g/zombopocalypse/",
+
+      "image": "./data/images/games/zombopocalypse.png"
+
+  },
+
+  {
+
+      "name": "I Wanna Be The Guy",
+
+      "directory": "/data/g/i-wanna-be-the-guy/",
+
+      "image": "./data/images/games/i-wanna-be-the-guy.png"
+
+  },
+
+  {
+
+      "name": "Knife Hit",
+
+      "directory": "/data/g/knife-hit/",
+
+      "image": "./data/images/games/knife-hit.png"
+
+  },
+
+  {
+
+      "name": "Skibidi Toilet Attack",
+
+      "directory": "/data/g/skibiti-toilet-attack/",
+
+      "image": "./data/images/games/skibidi-toilet-attack.png"
+
+  },
+
+  {
+
+      "name": "Stickman Boost",
+
+      "directory": "/data/g/stickman-boost/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "Stickman Climb",
+
+      "directory": "/data/g/stickman-climb/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "Stickman Golf",
+
+      "directory": "/data/g/stickman-golf/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "Death Run 3D",
+
+      "directory": "/data/g/death-run-3d/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "Thirty Dollar Website",
+
+      "directory": "/data/g/thirty-dollar-website/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "Super Meat Boy",
+
+      "directory": "/data/g/super-meat-boy/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "Time Shooter 1",
+
+      "directory": "/data/g/time-shooter/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "Time Shooter 2",
+
+      "directory": "/data/g/time-shooter-2/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "Time Shooter 3",
+
+      "directory": "/data/g/time-shooter-3/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "Factory Balls",
+
+      "directory": "/data/g/factory-balls/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "Fancy Pants Adventure",
+
+      "directory": "/data/g/fancy-pants-adventure/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "Fancy Pants Adventure 2",
+
+      "directory": "/data/g/fancy-pants-adventure-2/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "Fluid Simulator",
+
+      "directory": "/data/g/fluid-simulator/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "Last Horizons",
+
+      "directory": "/data/g/last-horizons/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "Lazy Jump 3D",
+
+      "directory": "/data/g/lazy-jump-3d/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "Gun Mayhem",
+
+      "directory": "/data/g/gun-mayhem/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "Gun Mayhem 2",
+
+      "directory": "/data/g/gun-mayhem-2/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "Gun Mayhem Redux",
+
+      "directory": "/data/g/gun-mayhem-redux/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "Helix Jump",
+
+      "directory": "/data/g/helix-jump/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "Hextris",
+
+      "directory": "/data/g/hextris/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "Little Alchemy",
+
+      "directory": "/data/g/little-alchemy/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "Osu Mania",
+
+      "directory": "/data/g/osu-mania/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "Osu",
+
+      "directory": "/data/g/osu/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "Pizza Tower",
+
+      "directory": "/data/g/pizza-tower/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "Red Ball 4",
+
+      "directory": "/data/g/red-ball-4/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "60s Burger Run",
+
+      "directory": "/data/g/60s-burger-run/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "1 on 1 Soccer",
+
+      "directory": "/data/g/1-on-1-soccer/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "2D Rocket League",
+
+      "directory": "/data/g/2d-rocket-league/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "Achivement Unlocked 2",
+
+      "directory": "/data/g/achunl2/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "Age Of War",
+
+      "directory": "/data/g/ageofwar/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "Amazing Rope Police",
+
+      "directory": "/data/g/amazing-rope-police/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "Among Us",
+
+      "directory": "/data/g/among-us/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "Avalanche",
+
+      "directory": "/data/g/avalanche/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "Bad Ice Cream 1",
+
+      "directory": "/data/g/bad-ice-cream/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "Bad Piggies",
+
+      "directory": "/data/g/bad-piggies/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "Bad Time Simulator",
+
+      "directory": "/data/g/bad-time-simulator/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "Ballistic Chickens",
+
+      "directory": "/data/g/ballistic-chickens/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "Basket Bros",
+
+      "directory": "/data/g/basket-bros/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+
+  {
+
+      "name": "Burger and Frights",
+
+      "directory": "/data/g/burger-and-frights/",
+
+      "image": "./data/images/games/BLANK.png"
+
+  },
+  {
+
+    "name": "Celeste",
+
+    "directory": "/data/g/celeste/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Cell Machine",
+
+    "directory": "/data/g/cell-machine/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Champion Island (Google)",
+
+    "directory": "/data/g/champion-island/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Circloo",
+
+    "directory": "/data/g/circloo/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Color Switch",
+
+    "directory": "/data/g/color-switch/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Dante",
+
+    "directory": "/data/g/dante/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Cluster Rush",
+
+    "directory": "/data/g/cluster-rush/game.html",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Monster Tracks",
+
+    "directory": "/data/g/monster-tracks/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Stacktris",
+
+    "directory": "/data/g/stacktris/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Idle Ants",
+
+    "directory": "/data/g/idle-ants/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Blumgi Slime",
+
+    "directory": "/data/g/blumgi-slime/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Temple Of Boom",
+
+    "directory": "/data/g/temple-of-boom/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Blumgi Ball",
+
+    "directory": "/data/g/blumgi-ball/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Rooftop Snipers 2",
+
+    "directory": "/data/g/rooftop-snipers-2/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Gobble",
+
+    "directory": "/data/g/gobble/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Web Retro",
+
+    "directory": "/data/g/webretro/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Bonk.io (kinda trash)",
+
+    "directory": "/data/g/bonk.io/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Chess",
+
+    "directory": "/data/g/chess/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Vex 5",
+
+    "directory": "/data/g/vex5/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Vex 6",
+
+    "directory": "/data/g/vex6/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Vex 7",
+
+    "directory": "/data/g/vex7/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "xx142-b2exe",
+
+    "directory": "/data/g/xx142-b2exe/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "FeedVid (Horror)",
+
+    "directory": "/data/g/feedvid/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Happy Wheels",
+
+    "directory": "/data/g/happywheels/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Jetpack Joyride",
+
+    "directory": "/data/g/jetpack-joyride/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "JustFall.LOL",
+
+    "directory": "/data/g/just-fall/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Just One Boss",
+
+    "directory": "/data/g/just-one-boss/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Madalin Stunt Cars 2",
+
+    "directory": "/data/g/madalin-stunt-cars-2/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Madalin Stunt Cars 3",
+
+    "directory": "/data/g/madalin-stunt-cars-3/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Moto X3M",
+
+    "directory": "/data/g/moto-x3m/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "OVO",
+
+    "directory": "/data/g/ovo/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "OVO 2",
+
+    "directory": "/data/g/ovo2/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Paper.IO 2",
+
+    "directory": "/data/g/paperio2/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "2048",
+
+    "directory": "/data/g/2048/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "9007199254740992",
+
+    "directory": "/data/g/9007199254740992/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "ADOFAI",
+
+    "directory": "/data/g/a-dance-of-fire-and-ice/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Adventure Drivers",
+
+    "directory": "/data/g/adventure-drivers/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Aquapark Slides",
+
+    "directory": "/data/g/aquapark-slides/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Bacon May Die",
+
+    "directory": "/data/g/bacon-may-die/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Bad Ice Cream 2",
+
+    "directory": "/data/g/bad-ice-cream-2/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Bad Ice Cream 3",
+
+    "directory": "/data/g/bad-ice-cream-3/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Baldi's Basics",
+
+    "directory": "/data/g/baldis-basics/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Crossy Road",
+
+    "directory": "/data/g/crossyroad/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "CSGO Clicker",
+
+    "directory": "/data/g/csgo-clicker/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "DogeMiner",
+
+    "directory": "/data/g/dogeminer/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Bloons TD 1",
+
+    "directory": "/data/g/btd/1",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Bloons TD 2",
+
+    "directory": "/data/g/btd/2",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Bloons TD 3",
+
+    "directory": "/data/g/btd/3",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Bloons TD 4",
+
+    "directory": "/data/g/btd/4",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Bloons TD 5",
+
+    "directory": "/data/g/btd/5",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "1v1.lol",
+
+    "directory": "/data/g/1v1-lol/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Legend of IdleOn",
+
+    "directory": "/data/g/idle-on/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Soundboard",
+
+    "directory": "/data/g/soundboard/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "FNAF 1",
+
+    "directory": "/data/g/fnaf/1/FNAF1-main/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "FNAF 2",
+
+    "directory": "/data/g/fnaf/2/FNAF2-main/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "FNAF 3",
+
+    "directory": "/data/g/fnaf/3/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "FNAF 4",
+
+    "directory": "/data/g/fnaf/4/fnaf44-main/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Breaking the Bank (Henry Stickmin)",
+
+    "directory": "/data/g/btb_hsc/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Crossing the Pit (Henry Stickmin)",
+
+    "directory": "/data/g/ctp_hsc/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Escaping the Prison (Henry Stickmin)",
+
+    "directory": "/data/g/etp_hsc/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Fleeing the Complex (Henry Stickmin)",
+
+    "directory": "/data/g/ftc_hsc/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Infiltrating the Airship (Henry Stickmin)",
+
+    "directory": "/data/g/ita_hsc/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Stealing the Diamond (Henry Stickmin)",
+
+    "directory": "/data/g/std_hsc/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "10 Minutes Till Dawn",
+
+    "directory": "/data/g/10-minutes-till-dawn/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Bloxorz",
+
+    "directory": "/data/g/bloxorz/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Snake",
+
+    "directory": "/data/g/snake/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Cursors.io",
+
+    "directory": "/data/g/cursors/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "eat.io",
+
+    "directory": "/data/g/eat.io/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Superhot",
+
+    "directory": "/data/g/superhot/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Sans Fight",
+
+    "directory": "/data/g/sansfight/src/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "AdVenture Captialist",
+
+    "directory": "/data/g/adcap/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Monkey Mart",
+
+    "directory": "/data/g/monkey-mart/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Bitlife",
+
+    "directory": "/data/g/bitlife/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Axe Random",
+
+    "directory": "/data/g/axe-random/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Archery Random",
+
+    "directory": "/data/g/archery-random/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Arena Random",
+
+    "directory": "/data/g/arena-random/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Gun Random",
+
+    "directory": "/data/g/gun-random/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+    "name": "Mace Random",
+
+    "directory": "/data/g/mace-random/",
+
+    "image": "./data/images/games/BLANK.png"
+
+},
+{
+
+  "name": "Spear Random",
+
+  "directory": "/data/g/spear-random/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Sword Random",
+
+  "directory": "/data/g/sword-random/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Snake IO",
+
+  "directory": "/data/g/snake-io/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Achievement Unlocked 1",
+
+  "directory": "/data/g/achievement-unlocked/1/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Rolling Sky",
+
+  "directory": "/data/g/rolling-sky/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Drift Boss",
+
+  "directory": "/data/g/drift-boss/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Retro Bowl",
+
+  "directory": "/data/g/retro-bowl/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Geometry Dash",
+
+  "directory": "/data/g/geometry-dash/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "KINGDOM HEARTS",
+
+  "directory": "/data/g/kingdom-hearts/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Soccer Random",
+
+  "directory": "/data/g/soccer-random/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Volley Random",
+
+  "directory": "/data/g/volley-random/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Drive Mad",
+
+  "directory": "/data/g/drive-mad/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Boxing Random",
+
+  "directory": "/data/g/boxing-random/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Minecraft 1.5.2",
+
+  "directory": "/data/g//mc/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Sandspiel",
+
+  "directory": "/data/g/sandspiel",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Backrooms",
+
+  "directory": "/data/g/backrooms/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Burrito Bison",
+
+  "directory": "/data/g/burrito-bison/launcha-libre/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Minecraft 1.8.8",
+
+  "directory": "/data/g//mc/1.8.8",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Basketball Stars",
+
+  "directory": "/data/g/basketball-stars",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Ch&tGPT Clone",
+
+  "directory": "/data/g/chatgpt",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Basket Random",
+
+  "directory": "/data/g/basket-random",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "HexGL",
+
+  "directory": "/data/g/hex-gl/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Slope",
+
+  "directory": "/data/g/slope/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "A Dark Room",
+
+  "directory": "/data/g/a-dark-room/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Dadish",
+
+  "directory": "/data/g/dadish/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Cookie Cl1cker",
+
+  "directory": "/data/g/cookie-clicker/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Subway Surfers",
+
+  "directory": "/data/g/subway-surfers/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Stickman Hook",
+
+  "directory": "/data/g/stickman-hook/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Dadish 2",
+
+  "directory": "/data/g/dadish-2/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Clicker Heroes",
+
+  "directory": "/data/g/clicker-heroes/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Pokemon Games",
+
+  "directory": "/data/g/pokemon/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Gons",
+
+  "directory": "/data/g/gons/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Idle Breakout",
+
+  "directory": "/data/g/idle-breakout/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Yohoho",
+
+  "directory": "/data/g/yohoho/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Tunnel Rush",
+
+  "directory": "/data/g/tunnel-rush/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Tiny Fishing",
+
+  "directory": "/data/g/tiny-fishing/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "There Is No Game",
+
+  "directory": "/data/g/there-is-no-game/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Mario",
+
+  "directory": "/data/g/mario/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "N-gon",
+
+  "directory": "/data/g/ngon/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Doodle Jump",
+
+  "directory": "/data/g/doodle-jump/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "The Impossible Quiz",
+
+  "directory": "/data/g/impossible-quiz/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Super Smash Flash",
+
+  "directory": "/data/g/ssf/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Super Smash Flash 2",
+
+  "directory": "/data/g/ssf2/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Dragon Ball Z Devolution",
+
+  "directory": "/data/g/dbzd/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Moto X3M",
+
+  "directory": "/data/g/motox3m/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Slope 2",
+
+  "directory": "/data/g/slope2/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Slope 3",
+
+  "directory": "/data/g/slope-3/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Dune",
+
+  "directory": "/data/g/dune/",
+
+  "image": "./data/images/games/BLANK.png"
+
+},
+
+{
+
+  "name": "Super Mario 64",
+
+  "directory": "/data/g/sm64/",
+
+  "image": "./data/images/games/BLANK.png"
+
+}
+]
+}
