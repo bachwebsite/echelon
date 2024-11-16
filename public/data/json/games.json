@@ -2084,7 +2084,7 @@
 
     "directory": "/data/g/fnaf/3/",
 
-    "image": "./data/images/games/3.png"
+    "image": "./data/images/games/FNAF3.png"
 
 },
 
@@ -2519,11 +2519,11 @@
 
 {
 
-  "name": "Moto X3M",
+  "name": "Moto X3M 2",
 
   "directory": "/data/g/motox3m/",
 
-  "image": "./data/images/games/motox3m.png"
+  "image": "./data/images/games/motox3m2.png"
 
 },
 
