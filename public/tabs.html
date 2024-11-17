@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./data/images/favicon-transparent.png" />
+        <link rel="shortcut icon" href="./data/images/favicon-transparent.png" />
     <title>Tabs</title>
     <style>
       @font-face {
@@ -10,17 +12,30 @@
         src: url("/data/fonts/Tempura.ttf");
       }
       * {
+        background: linear-gradient(135deg, #1a1a2e, #16213e) no-repeat center center fixed;
+        transition: all 0.4s ease-in-out;
+        animation: fadeIn 1.8s ease;
         z-index: 99;
         font-family: "FONT2", sans-serif;
+      }
+      @keyframes fadeIn {
+          from {
+              opacity: 0;
+              transform: translateY(30px);
+          }
+          to {
+              opacity: 1;
+              transform: translateY(0);
+          }
       }
       #x {
         margin-left: 10px;
       }
       button {
-        background: #6317a9;
+        background: #1f44ab;
         width: 30px;
         height: 30px;
-        border: 1px solid #200540;
+        border: 1px solid #061640;
         font-size: 20px;
         margin-bottom: -100px;
         border-top-left-radius: 7px;
@@ -30,16 +45,19 @@
         overflow: hidden;
         text-overflow: ellipsis;
         transition: 0.5s ease;
+        background-size: 16px;
+        background-repeat: no-repeat;
+        background-position: center;
       }
 
       body {
-        background-color: #200540;
+        background-color: #06194d;
         font-family: Arial, sans-serif;
         transition: background-color 0.5s ease;
       }
 
       .active {
-        background-color: #6317a9;
+        background-color: #002ba2;
         position: relative;
         z-index: 1;
       }
@@ -51,7 +69,7 @@
         left: -1px;
         right: -1px;
         bottom: 0px;
-        border: 2px solid #a24fe0;
+        border: 2px solid #4a70d7;
         border-bottom: none;
         border-radius: 5px;
         border-bottom-left-radius: 0;
@@ -70,20 +88,29 @@
 
       .active-iframe {
         display: block;
-        outline: 2px solid #a24fe0;
+        outline: 2px solid #5275d3;
       }
       #tab {
         height: 30px;
         min-width: 130px;
         max-width: 300px;
         margin: 0;
+        padding-left: 25px;
+        background-size: 16px;
+        background-repeat: no-repeat;
+        background-position: 5px center;
       }
 
       button:hover {
-        background-color: #a24fe0;
-        box-shadow: 0px 5px 5px #a24fe0 ;
+        background-color: #4b6ece;
+        box-shadow: 0px 5px 5px #4b6ece;
       }
-    </style>
+      #icon {
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+        margin-right: 5px;
+      }    </style>
   </head>
   <body>
     <div class="container">
@@ -104,9 +131,17 @@
       function createTab() {
         const tab = document.createElement("button");
         const iframe = document.createElement("iframe");
+        const img = document.getElementById("icon");
         tab.textContent = "Loading..";
         iframe.src = "/";
-        setInterval(function () { tab.textContent = iframe.contentWindow.document.getElementById('fram').contentDocument.title; }, 1000);
+        setInterval(function () { 
+          tab.textContent = iframe.contentWindow.document.getElementById('fram').contentDocument.title; 
+          if (iframe.contentWindow.document.getElementById('fram').contentDocument.querySelector('link[rel="icon"]')) {
+            tab.style.backgroundImage = `url(${iframe.contentWindow.document.getElementById('fram').contentDocument.querySelector('link[rel="icon"]').href})`;
+          } else {
+            tab.style.backgroundImage = `url(/data/images/tabs/icon.png)`;
+          }
+        }, 1000);
         tab.id += "tab";
         tabcontainer.appendChild(iframe);
         tabs.appendChild(tab);

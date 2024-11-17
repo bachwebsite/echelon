@@ -4,7 +4,20 @@
 }
 
 * {
+  background: linear-gradient(135deg, #1a1a2e, #16213e) no-repeat center center fixed;
+  transition: all 0.4s ease-in-out;
+  animation: fadeIn 1.8s ease;
   font-family: 'FONT1', sans-serif;
+}
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
 
 #container {

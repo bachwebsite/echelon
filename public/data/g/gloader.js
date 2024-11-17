@@ -18,6 +18,7 @@ fetch('/data/json/games.json')
       } else {
         link.onclick = () => launch(game.directory);
       }
+      div.onclick = () => link.click();
       
       div.appendChild(img);
       div.appendChild(link);

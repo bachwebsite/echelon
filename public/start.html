@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./data/images/favicon-transparent.png" />
+        <link rel="shortcut icon" href="./data/images/favicon-transparent.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <title>Document</title>
+    <title>breakium</title>
     <style>
         @font-face {
             font-family: 'FONT2';
@@ -18,6 +20,19 @@
             padding: 0;
             letter-spacing: 2px;
             overflow-y: hidden;
+            transition: all 0.4s ease-in-out;
+            animation: fadeIn 1.8s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         body {
@@ -25,7 +40,8 @@
             align-items: center;
             justify-content: center;
             font-family: 'FONT2';
-            background-color: #1f0030;
+            background: linear-gradient(135deg, #1a1a2e, #16213e) no-repeat center center fixed;
+            min-height: 100vh;
         }
         h1 {
             position: relative;
@@ -33,46 +49,70 @@
             color: #ffffff;
             text-align: center;
             font-size: 150px;
-            margin-top: 35vh;
+            margin-top: 0;
+            text-shadow: 0 4px 12px rgba(0,0,0,0.2);
         }
         h6 {
             position: absolute;
-            color: #200061;
+            color: #4a5568;
+            bottom: 40vh;
+            transition: color 0.3s ease;
+        }
+        h6:hover {
+            color: #718096;
         }
         .new-tag {
             position: absolute;
-            top: 30px; /* Adjust based on your design */
-            right: -3px; /* Aligns it with the left side of the h1 */
-            background-color: red;
+            top: 30px;
+            right: -3px;
+            background-color: #e53e3e;
             color: white;
             padding: 2px 5px;
             font-size: 30px;
             border-radius: 3px;
             transform: rotate(10deg);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
         }
         div#circlebtn {
             width: 80vw;
             border-radius: 100px;
-            border: 1px solid white;
-            
+            border: 1px solid rgba(255,255,255,0.2);
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(5px);
             display: inline-block;
             cursor: pointer;
+            transition: all 0.3s ease;
         }
-        img#svgg{
-            width:  50px;
+        div#circlebtn:hover {
+            border: 1px solid rgba(255,255,255,0.4);
+            background: rgba(255,255,255,0.1);
+            transform: translateY(-2px);
+        }
+        img#svgg {
+            width: 50px;
             height: 50px;
             filter: invert(100%);
             margin: 20px;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            opacity: 0.8;
+        }
+        img#svgg:hover {
+            transform: scale(1.1);
+            opacity: 1;
         }
         #brea {
-            color:#6200973c;
+            color: #3b82f690;
+            transition: color 0.3s ease;
         }
         #kium {
-            color:#6c22ff50;
+            color: #60a5fa90;
+            transition: color 0.3s ease;
         }
-    </style>
+        #brea:hover, #kium:hover {
+            color: #93c5fd;
+        }    </style>
 </head>
-<body>
+<body style="background-color: black;">
     <h1><span id="brea">brea</span><span id="kium">kium</span></h1>
     <h6>by Bach</h6>
 
@@ -81,9 +121,8 @@
             <img id="svgg" onclick="window.location.href = '/g'" src="/data/images/svg/game.svg">
             <img id="svgg" onclick="window.location.href = '/a'" src="/data/images/svg/apps.svg">
             <a href="https://discord.gg/s4gXM6XUgH" target="_blank" style="text-decoration: none; color: inherit;">
-                <img style="width: 50px;height: 50px;margin: 20px;" src="/data/images/discord-2-xxl.png">
+                <img style="width: 50px;height: 50px;margin: 20px;transition: transform 0.3s ease, opacity 0.3s ease;opacity:0.8;" src="/data/images/discord-2-xxl.png" onmouseover="this.style.transform='scale(1.1)';this.style.opacity='1'" onmouseout="this.style.transform='scale(1)';this.style.opacity='0.8'">
             </a>
-            
         </div>
     </center>
 </body>

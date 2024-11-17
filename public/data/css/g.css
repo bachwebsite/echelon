@@ -1,54 +1,80 @@
+/* Bubbly Card Styles */
+* {
+    background: linear-gradient(135deg, #1a1a2e, #16213e) no-repeat center center fixed;
+    transition: all 0.4s ease-in-out;
+    animation: fadeIn 1.8s ease;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 .bubbly-div {
-    width: 190px; /* Adjust the width as needed */
-    height: 300px; /* Increase the height for a taller card */
-    background-color: #32014C; /* Light background color */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    overflow: hidden; /* Ensure content fits within the card */
-    text-align: center; /* Center the text and image */
-    margin-left: 16px; 
-    margin-right: 16px; 
-    margin-bottom: 16px; /* Space around the card */
+    width: 190px;
+    height: 300px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    overflow: hidden;
+    text-align: center;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: transform 0.3s ease; /* Add hover effect */
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    animation: fadeIn 1.8s ease;
 }
 
 .bubbly-div:hover {
-    transform: translateY(-10px); /* Slight lift on hover */
+    border: 1px solid rgba(255,255,255,0.4);
+    background: rgba(255,255,255,0.1);
+    transform: translateY(-2px);
 }
 
-.bubbly-div img {
-    max-width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ddd;
-}
-
-.bubbly-div a {
-    display: block;
-    padding: 15px;
-    font-size: 18px;
-    color: #8500cd;
-    text-decoration: none;
-}
-
-.bubbly-div a:hover {
-    color: #4a0071;
-}
 .bubbly-div img {
     width: 150px;
     height: 150px;
     border-radius: 15px;
-    border: 2px solid #8D5DA8;
+    border: 1px solid rgba(255,255,255,0.05);
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    filter: drop-shadow(0 0 20px #16213e);
+    transition: all 0.4s ease-in-out;
 }
+
+.bubbly-div a {
+    background: none;
+    display: block;
+    padding: 15px;
+    font-size: 18px;
+    color: #7ea5d2;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: all 0.4s ease-in-out;
+}
+
+.bubbly-div a:hover {
+    color: #4d74a0;
+}
+
 #search {
-    display         : flex;
-    width           : 400px;
-    height          : 30px;
-    margin          : 40px; 
-    border-radius   : 10px;
-    background-color: #390058;
-    border          : 2px solid white;
+    display: flex;
+    width: 400px;
+    height: 30px;
+    margin: 40px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: all 0.4s ease-in-out;
 }
