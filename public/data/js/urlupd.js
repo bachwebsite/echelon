@@ -1,7 +1,7 @@
 function decode(url) {
     if(url === 'https://' + location.hostname + '/'){
       return '';
-    } else if(url==='https://renderisgay.onrender.com/') {
+    } else if(url.includes('https://renderisgay.onrender.com/')) {
         return 'cant share the link sry';
     }
   

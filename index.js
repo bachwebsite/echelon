@@ -25,12 +25,8 @@ app.get("/go=:query", async (req, res) => {
     res.status(500).send({ error: 'Failed to fetch suggestions' });
   }
 });
-
-app.get('/chelon', (req, res) => {
-  res.sendFile(path.join(process.cwd(), '/public/index.html'));
-});
 app.get('/', (req, res) => {
-  res.sendFile(path.join(process.cwd(), '/public/q.html'));
+  res.sendFile(path.join(process.cwd(), '/public/index.html'));
 });
 app.get('/g', (req, res) => {
   res.sendFile(path.join(process.cwd(), '/public/g.html'));

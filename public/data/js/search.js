@@ -1,22 +1,23 @@
-"use strict";
-/**
- *
- * @param {string} input
- * @param {string} template Template for a search query.
- * @returns {string} Fully qualified URL
- */
-function search(input, template) {
-  try {
-    return new URL(input).toString();
-  } catch (err) {
-    //
-  }
+const form = document.querySelector('uv-form');
+const input = document.querySelector('input');
 
-  try {
-    const url = new URL(`http://${input}`);
-    if (url.hostname.includes(".")) return url.toString();
-  } catch (err) {
-    //
-  }
-  return template.replace("%s", encodeURIComponent(input));
-}
+
+form.addEventListener('submit', async event => {
+    event.preventDefault();
+    
+    window.navigator.serviceWorker.register('./sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        let url = input.value.trim();
+        if (!isUrl(url)) url = 'https://www.google.com/search?q=' + url;
+        else if (!(url.startsWith('https://') || url.startsWith('http://'))) url = 'http://' + url;
+
+
+        window.location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
+    });
+});
+
+function isUrl(val = ''){
+    if (/^http(s?):\/\//.test(val) || val.includes('.') && val.substr(0, 1) !== ' ') return true;
+    return false;
+};

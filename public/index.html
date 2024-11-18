@@ -1,52 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link rel="icon" href="./data/images/favicon-transparent.png" />
-      <link rel="shortcut icon" href="./data/images/favicon-transparent.png" />
-      <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jacquarda+Bastarda+9&family=Manrope:wght@200..800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="./data/css/style.css">
-      <link href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css" rel="stylesheet">
-      <title>breakium</title>
-  </head>
-
-  <body style="background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('./data/images/bg.png') no-repeat center center fixed;background-size: cover;">
-    <div id="container">
-      <center>
-        <h1 id="ech__title">echelon</h1>
-        <div id="mm">
-          <form id="uv-form" class="searchbar-center">
-            <div class="searchbar-input-spacer"></div>
-            <input class="ech__search" id="uv-address" type="text" class="searchbar-input" autocomplete="off" title="Search" role="combobox" placeholder="search" />
-          </form>
-        </div>
-      </center>  
-    </div>
-      <script src="uv/uv.bundle.js"></script>
-      <script src="uv/uv.config.js"></script>
-      <script src="uv/uv.sw.js"></script>
-      <script src="./sw.js"></script>
-      <script src="/dynamic/dynamic.config.js"></script>
-
-      <script>
-        const worker = new Worker("/dynamic/dynamic.worker.js");
-      </script>
-      <script>
-        async function wait(milliseconds) {
-          return new Promise(resolve => {
-            setTimeout(resolve, milliseconds);
-          });
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./data/images/favicon-transparent.png" />
+        <link rel="shortcut icon" href="./data/images/favicon-transparent.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>breakium</title>
+    <style>
+        @font-face {
+            font-family: 'FONT2';
+            src: url('./data/fonts/AlteHaasGroteskRegular.ttf');
         }
-        const inputBox = document.getElementById('input-box');
-        inputBox.addEventListener('keypress', function() {
-          inputBox.classList.add('fade-in');
-        });
-      </script>
-      
-      <script src="./data/js/index.js"></script>
-      <script src="https://kit.fontawesome.com/671b9764c1.js" crossorigin="anonymous"></script>
-  </body>
+
+        * {
+            font-family: 'FONT2';
+            margin: 0;
+            padding: 0;
+            letter-spacing: 2px;
+            overflow-y: hidden;
+            transition: all 0.4s ease-in-out;
+            animation: fadeIn 1.8s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'FONT2';
+            background: linear-gradient(135deg, #1a1a2e, #16213e) no-repeat center center fixed;
+            min-height: 100vh;
+        }
+        h1 {
+            position: relative;
+            display: block;
+            color: #ffffff;
+            text-align: center;
+            font-size: 150px;
+            margin-top: 0;
+            text-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        h6 {
+            position: absolute;
+            color: #4a5568;
+            bottom: 40vh;
+            transition: color 0.3s ease;
+        }
+        h6:hover {
+            color: #718096;
+        }
+        .new-tag {
+            position: absolute;
+            top: 30px;
+            right: -3px;
+            background-color: #e53e3e;
+            color: white;
+            padding: 2px 5px;
+            font-size: 30px;
+            border-radius: 3px;
+            transform: rotate(10deg);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        div#circlebtn {
+            width: 60vw;
+            border-radius: 100px;
+            border: 1px solid rgba(255,255,255,0.2);
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(5px);
+            display: inline-block;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        div#circlebtn:hover {
+            border: 1px solid rgba(255,255,255,0.4);
+            background: rgba(255,255,255,0.1);
+            transform: translateY(-2px);
+        }
+        img#svgg {
+            width: 50px;
+            height: 50px;
+            filter: invert(100%);
+            margin: 20px;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            opacity: 0.8;
+        }
+        img#svgg:hover {
+            transform: scale(1.1);
+            opacity: 1;
+        }
+        #brea {
+            color: #3b82f690;
+            transition: color 0.3s ease;
+        }
+        #kium {
+            color: #60a5fa90;
+            transition: color 0.3s ease;
+        }
+        #brea:hover, #kium:hover {
+            color: #93c5fd;
+        }    </style>
+</head>
+<body style="background-color: black;">
+    <h1><span id="brea">brea</span><span id="kium">kium</span></h1>
+    <h6>by Bach</h6>
+
+    <center style="position:absolute;bottom:1vh;left: 0;right: 0;margin-left: auto;margin-right: auto;">
+        <div id="circlebtn">
+            <img id="svgg" onclick="window.location.href = '/g'" src="/data/images/svg/game.svg">
+            <img id="svgg" onclick="window.location.href = '/a'" src="/data/images/svg/apps.svg">
+            <img id="svgg" onclick="window.location.href = '/null'" src="/data/images/svg/search.svg">
+            <a href="https://discord.gg/s4gXM6XUgH" target="_blank" style="text-decoration: none; color: inherit;">
+                <img style="width: 50px;height: 50px;margin: 20px;transition: transform 0.3s ease, opacity 0.3s ease;opacity:0.8;" src="/data/images/discord-2-xxl.png" onmouseover="this.style.transform='scale(1.1)';this.style.opacity='1'" onmouseout="this.style.transform='scale(1)';this.style.opacity='0.8'">
+            </a>
+        </div>
+    </center>
+</body>
 </html>

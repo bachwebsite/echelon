@@ -2055,7 +2055,7 @@
 
     "name": "1v1.lol",
 
-    "directory": "/data/g/1v1-lol/",
+    "directory": "https://1v1.lol/",
 
     "image": "./data/images/games/1v1-lol.png"
 
