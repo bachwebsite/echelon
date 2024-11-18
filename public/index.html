@@ -38,22 +38,24 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
             background: linear-gradient(135deg, #1a1a2e, #16213e) no-repeat center center fixed;
             min-height: 100vh;
+            padding: 0 10px;
+            overflow: hidden;
         }
 
         h1 {
             color: #ffffff;
-            font-size: 140px;
-            margin: 20px 0;
-            margin-top: 40vh;
+            font-size: 10vw;
+            margin: 0;
             text-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            text-align: center;
         }
 
         h6 {
             color: #4a5568;
-            margin-bottom: auto;
+            margin: 10px 0;
             transition: color 0.3s ease;
         }
 
@@ -61,27 +63,19 @@
             color: #718096;
         }
 
-        .new-tag {
-            position: absolute;
-            top: 30px;
-            right: -3px;
-            background-color: #e53e3e;
-            color: white;
-            padding: 2px 5px;
-            font-size: 30px;
-            border-radius: 3px;
-            transform: rotate(10deg);
-            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-        }
-
         #circlebtn {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 10px;
-            width: 60vw;
-            padding: 5px;
-            border-radius: 100px;
+            width: 100%;
+            max-width: 400px;
+            padding: 10px;
+            border-radius: 50px;
             border: 1px solid rgba(255,255,255,0.2);
             background: rgba(255,255,255,0.05);
             backdrop-filter: blur(5px);
@@ -92,12 +86,13 @@
         #circlebtn:hover {
             border: 1px solid rgba(255,255,255,0.4);
             background: rgba(255,255,255,0.1);
-            transform: translateY(-2px);
+            transform: translate(-50%, -2px);
         }
 
         img#svgg {
-            width: 50px;
-            height: 50px;
+            width: 15vw;
+            max-width: 50px;
+            height: auto;
             filter: invert(100%);
             margin: 0 10px;
             transition: transform 0.3s ease, opacity 0.3s ease;
@@ -122,21 +117,34 @@
         #brea:hover, #kium:hover {
             color: #93c5fd;
         }
+
+        a img {
+            width: 15vw;
+            max-width: 50px;
+            height: auto;
+            margin: 0 10px;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            opacity: 0.8;
+        }
+
+        a img:hover {
+            transform: scale(1.1);
+            opacity: 1;
+        }
     </style>
 </head>
 <body>
-    <h1><span id="brea">brea</span><span id="kium">kium</span></h1>
-    <h6>by Bach</h6>
+    <div style="text-align: center;">
+        <h1><span id="brea">brea</span><span id="kium">kium</span></h1>
+        <h6>by Bach</h6>
+    </div>
 
     <div id="circlebtn">
         <img id="svgg" onclick="window.location.href = '/g'" src="/data/images/svg/game.svg">
         <img id="svgg" onclick="window.location.href = '/a'" src="/data/images/svg/apps.svg">
         <img id="svgg" onclick="window.location.href = '/null'" src="/data/images/svg/search.svg">
         <a href="https://discord.gg/s4gXM6XUgH" target="_blank" style="text-decoration: none; color: inherit;">
-            <img style="width: 50px; height: 50px; margin: 20px; transition: transform 0.3s ease, opacity 0.3s ease; opacity: 0.8;" 
-                 src="/data/images/discord-2-xxl.png" 
-                 onmouseover="this.style.transform='scale(1.1)'; this.style.opacity='1'" 
-                 onmouseout="this.style.transform='scale(1)'; this.style.opacity='0.8'">
+            <img src="/data/images/discord-2-xxl.png">
         </a>
     </div>
 </body>
