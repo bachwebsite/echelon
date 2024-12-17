@@ -1,5 +1,45 @@
 /* Bubbly Card Styles */
-* {
+/* Light Theme */
+body.light-theme {
+    background: linear-gradient(135deg, #bebebe, #bbbbbb);;
+    color: #333;
+}
+body.light-theme .bubbly-div > img {
+    filter: drop-shadow(0 0 20px #8f8f8f);
+}
+
+body.light-theme .bubbly-div > a {
+    color: #272727;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+    color: white;
+}
+body.dark-theme .bubbly-div > img {
+    filter: drop-shadow(0 0 20px #161616);
+}
+
+body.dark-theme .bubbly-div > a {
+    color: #808080;
+}
+
+/* Blue Theme */
+body.red-theme {
+    background: linear-gradient(135deg, #410000, #580000);
+    color: #ff8f8f;
+}
+body.red-theme .bubbly-div > img {
+    filter: drop-shadow(0 0 20px #720101);
+}
+
+body.red-theme .bubbly-div > a {
+    color: #cf6060;
+}
+
+/* Default Global Styles */
+body {
     background: linear-gradient(135deg, #1a1a2e, #16213e) no-repeat center center fixed;
     transition: all 0.4s ease-in-out;
     animation: fadeIn 1.8s ease;
@@ -14,6 +54,7 @@
         transform: translateY(0);
     }
 }
+
 .bubbly-div {
     width: 190px;
     height: 300px;

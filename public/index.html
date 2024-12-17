@@ -16,13 +16,73 @@
             src: url('./data/fonts/AlteHaasGroteskRegular.ttf');
         }
 
+        body.dark-theme {
+            background: linear-gradient(135deg, #1a1a1a, #111111);
+            color: #dddddd;
+        }
+        body.dark-theme > div > h6 {
+            color: #474747;
+        }
+        body.dark-theme > div > h1 > span#brea {
+            color: #30303090;
+        }
+        body.dark-theme > div > h1 > span#kium {
+            color: rgba(34, 34, 34, 0.565)
+        }
+        /* do the hovers for brea and kium */
+        body.dark-theme > div > h1 > span#brea:hover {
+            color: #44444490;
+        }
+        body.dark-theme > div > h1 > span#kium:hover {
+            color: rgba(49, 49, 49, 0.565);
+        }
+        body.light-theme {
+            background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+            color: #333333;
+        }
+        body.light-theme > div > h6 {
+            color: #666666;
+        }
+        body.light-theme > div > h1 > span#brea {
+            color: #e0e0e090;
+        }
+        body.light-theme > div > h1 > span#kium {
+            color: rgba(189, 189, 189, 0.565)
+        }
+        body.light-theme > div > h1 > span#brea:hover {
+            color: #d0d0d090;
+        }
+        body.light-theme > div > h1 > span#kium:hover {
+            color: rgba(163, 163, 163, 0.565);
+        }
+        body.light-theme img#svgg {
+            filter: invert(50%);
+        }
+
+        body.red-theme {
+            background: linear-gradient(135deg, #700000, #5c0000);
+            color: #ffffff;
+        }
+        body.red-theme > div > h6 {
+            color: #880000;
+        }
+        body.red-theme > div > h1 > span#brea {
+            color: #99000090;
+        }
+        body.red-theme > div > h1 > span#kium {
+            color: rgba(136, 0, 0, 0.565)
+        }
+        body.red-theme > div > h1 > span#brea:hover {
+            color: #a3000090;
+        }
+        body.red-theme > div > h1 > span#kium:hover {
+            color: rgba(151, 0, 0, 0.565);
+        }
         * {
             font-family: 'FONT2';
             margin: 0;
             padding: 0;
             letter-spacing: 2px;
-            transition: all 0.4s ease-in-out;
-            animation: fadeIn 1.8s ease;
         }
 
         @keyframes fadeIn {
@@ -145,6 +205,7 @@
         <img id="svgg" onclick="window.location.href = '/g'" src="/data/images/svg/game.svg">
         <img id="svgg" onclick="window.location.href = '/a'" src="/data/images/svg/apps.svg">
         <img id="svgg" onclick="window.location.href = '/null'" src="/data/images/svg/search.svg">
+        <img id="svgg" onclick="window.location.href = '/s'" src="/data/images/svg/settings.svg">
         <a href="https://discord.gg/s4gXM6XUgH" target="_blank" style="text-decoration: none; color: inherit;">
             <img src="/data/images/discord-2-xxl.png">
         </a>
@@ -160,5 +221,9 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "pbldbrga67");
 </script>
+
+<script src="./data/js/loading.js"></script>
+<script src="./data/js/theme.js"></script>
+
 </body>
 </html>

@@ -152,6 +152,23 @@ a {
   display: none; /* Initially hidden */
   background-color: #ffffff;
 }
+/* Light Theme */
+body.light-theme {
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Dark Theme */
+body.dark-theme {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: white;
+}
+
+/* Additional Themes */
+body.red-theme {
+  background: #8a1e1e;
+  color: #f3f4f6;
+}
 
 .suggestion-item {
   padding: 10px;

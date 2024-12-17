@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./data/images/favicon-transparent.png" />
+    <link rel="shortcut icon" href="./data/images/favicon-transparent.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./data/css/s.css">
+    <title>Settings - Breakium</title>
+</head>
+<body>
+    <div id="cont">
+        <!-- Sidebar for options -->
+        <div class="sidebar">
+            <button data-target="general">General</button>
+            <button data-target="appearance">Appearance</button>
+            <button data-target="privacy">Privacy</button>
+            <button data-target="about">About</button>
+            <button onclick="window.location.href = '/'" style="background-color: darkgreen !important;">Save Changes</button>
+        </div>
+
+        <!-- Content area -->
+        <div class="content">
+            <div id="general" class="option-section active">
+                <h2>General Settings</h2>
+                <p>Manage general preferences</p>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+                <span>Enable Notifications</span>
+            </div>
+
+            <div id="appearance" class="option-section">
+                <h2>Appearance</h2>
+                <p>Customize the look and feel of the application, including themes and fonts.</p>
+                
+                <div class="custom-dropdown">
+                    <div class="dropdown-header">
+                        <span id="selected-theme">Select Theme</span>
+                        <span class="dropdown-arrow">&#9660;</span>
+                    </div>
+                    <ul class="dropdown-list">
+                        <li data-theme="">Default</li>
+                        <li data-theme="light-theme">Light Theme</li>
+                        <li data-theme="dark-theme">Dark Theme</li>
+                        <li data-theme="red-theme">Red Theme</li>
+                    </ul>
+                </div>
+
+                <textarea placeholder="Enter custom CSS here..."></textarea>
+            </div>
+
+            <div id="privacy" class="option-section">
+                <h2>Test</h2>
+                <p>This is a test tab</p>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+                <span>switch_Test</span>
+                <textarea placeholder="textbox_Test"></textarea>
+            </div>
+
+            <div id="about" class="option-section">
+                <h2>About</h2>
+                <p>special thanks to the proxy dev community :) and yes bach made this</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "pbldbrga67");
+    </script>
+    <script src="./data/js/theme.js"></script>
+    <script src="./data/js/s.js"></script>
+</body>
+</html>
