@@ -27,9 +27,8 @@
             color: #30303090;
         }
         body.dark-theme > div > h1 > span#kium {
-            color: rgba(34, 34, 34, 0.565)
+            color: rgba(34, 34, 34, 0.565);
         }
-        /* do the hovers for brea and kium */
         body.dark-theme > div > h1 > span#brea:hover {
             color: #44444490;
         }
@@ -47,7 +46,7 @@
             color: #e0e0e090;
         }
         body.light-theme > div > h1 > span#kium {
-            color: rgba(189, 189, 189, 0.565)
+            color: rgba(189, 189, 189, 0.565);
         }
         body.light-theme > div > h1 > span#brea:hover {
             color: #d0d0d090;
@@ -70,7 +69,7 @@
             color: #99000090;
         }
         body.red-theme > div > h1 > span#kium {
-            color: rgba(136, 0, 0, 0.565)
+            color: rgba(136, 0, 0, 0.565);
         }
         body.red-theme > div > h1 > span#brea:hover {
             color: #a3000090;
@@ -193,34 +192,46 @@
             transform: scale(1.1);
             opacity: 1;
         }
+
         #center {
             align-items: center;
             justify-content: center;
         }
+
         div#dc {
             position: absolute; 
             top: 50%;         
             left: 10%;         
             transform: translate(-50%, -50%);
         }
-        div#abscent{
+
+        div#abscent {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
+        div#abscent2 {
+            width: 50%; /* Default for mobile */
+            max-width: 50%; /* Ensure it doesn't go beyond the container width */
+            text-align: center;
+            margin: 0 auto;
+        }
+
     </style>
 </head>
 <body>
-    <div id="dc">
-        <script type="text/javascript">atOptions = {'key' : '195351cfa09660dee93283273664c2c3','format' : 'iframe','height' : 600,'width' : 160,'params' : {}};</script>
-        <script type="text/javascript" src="//www.highperformanceformat.com/195351cfa09660dee93283273664c2c3/invoke.js"></script>
-    </div>
-    <div id="abscent" style="text-align: center;">
+    <div id="abscent">
         <h1><span id="brea">brea</span><span id="kium">kium</span></h1>
         <h6>by Bach</h6>
     </div>
-
+    <div id="abscent2" style="position: relative; width: 50%; height: 0; padding-top: 20.0226%;
+    padding-bottom: 0; margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+    border-radius: 8px; will-change: transform;">
+        <iframe loading="lazy" style="position: absolute; width: 100%; height: 50%; top: 0; left: 0; border: none; padding: 0;margin-top: 0.9em;"
+            src="https://www.canva.com/design/DAGbRI3EyNE/BTl5OzO622TwFAMM6QN-Nw/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+        </iframe>
+    </div>
     <div id="circlebtn">
         <img id="svgg" onclick="window.location.href = '/g'" src="/data/images/svg/game.svg">
         <img id="svgg" onclick="window.location.href = '/a'" src="/data/images/svg/apps.svg">
@@ -230,20 +241,14 @@
             <img src="/data/images/discord-2-xxl.png">
         </a>
     </div>
-    
-    <!--<script async="async" data-cfasync="false" src="//pl22798701.profitablecpmrate.com/565c99c7f7a4f3409345ba9e2962ec09/invoke.js"></script>
-<div id="container-565c99c7f7a4f3409345ba9e2962ec09"></div>-->
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "pbldbrga67");
-</script>
-
-
-<script src="./data/js/loading.js"></script>
-<script src="./data/js/theme.js"></script>
-
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "pbldbrga67");
+    </script>
+    <script src="./data/js/loading.js"></script>
+    <script src="./data/js/theme.js"></script>
 </body>
 </html>
