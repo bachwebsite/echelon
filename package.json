@@ -1,7 +1,6 @@
 {
   "name": "breakium",
   "version": "1.0.0",
-  "description": "",
   "type": "module",
   "main": "index.js",
   "scripts": {
@@ -12,11 +11,21 @@
   "license": "LGPL-2.0-only",
   "dependencies": {
     "@titaniumnetwork-dev/ultraviolet": "^3.1.0",
-    "@tomphttp/bare-server-node": "^2.0.3",
+    "@tomphttp/bare-server-node": "^2.0.5",
     "chalk": "^5.3.0",
     "compression": "^1.7.4",
     "dotenv": "^16.3.1",
     "eruda": "^3.0.1",
-    "express": "^4.18.2"
-  }
+    "express": "^4.18.2",
+    "v2.0.1": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bachwebsite/echelon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bachwebsite/echelon/issues"
+  },
+  "homepage": "https://github.com/bachwebsite/echelon#readme",
+  "description": ""
 }

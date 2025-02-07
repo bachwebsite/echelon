@@ -8,6 +8,26 @@
     {}
   ],
   "games": [
+  {
+    "name": "Slime Laboratory",
+  "directory": "https://www.coolmathgames.com/0-slime-laboratory/play",
+    "image": "./data/images/games/slime-lab.png"
+  },
+  {
+    "name": "name",
+  "directory": "directory",
+    "image": "./data/images/games/xxxxxxxx"
+  },
+  {
+    "name": "name",
+  "directory": "directory",
+    "image": "./data/images/games/xxxxxxxx"
+  },
+    {
+      "name": "WorldGuessr",
+    "directory": "https://worldguessr.coolmathgames.com/",
+      "image": "./data/images/games/worldguessr.png"
+    },
     {
       "name": "Block Blast",
     "directory": "https://reunbozdo.github.io",
@@ -2067,7 +2087,7 @@
 
     "directory": "/data/g/idle-on/",
 
-    "image": "./data/images/games/idle-on.png"
+    "image": "./data/images/games/idleon.png"
 
 },
 
