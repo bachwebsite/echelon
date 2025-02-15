@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.className = savedTheme;
             const selectedElement = document.querySelector(`[data-theme="${savedTheme}"]`);
             if (selectedElement) {
-                selectedTheme.textContent = selectedElement.textContent;
+                selectedTheme.textContent = selectedElement.textContent; 
             }
         }
     }
