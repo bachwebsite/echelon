@@ -18,7 +18,7 @@
             <button data-target="appearance">Appearance</button>
             <button data-target="privacy">Privacy</button>
             <button data-target="about">About</button>
-            <button onclick="window.location.href = '/'" style="background-color: darkgreen !important;">Save Changes</button>
+            <button onclick="window.location.href = '/'" style="background-color: darkgreen !important;" id="saveChanges">Save Changes</button>
         </div>
 
         <!-- Content area -->
@@ -27,10 +27,11 @@
                 <h2>General Settings</h2>
                 <p>Manage general preferences</p>
                 <label class="switch">
-                    <input type="checkbox">
+                    <input type="checkbox" id="adToggle">
                     <span class="slider"></span>
                 </label>
-                <span>Enable Notifications</span>
+                <span>Disable Ads</span>
+                <button id="downloadIframeBtn">Download Iframe Page</button>
             </div>
 
             <div id="appearance" class="option-section">
