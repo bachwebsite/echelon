@@ -14,14 +14,89 @@
     "image": "./data/images/games/slime-lab.png"
   },
   {
-    "name": "name",
-  "directory": "directory",
-    "image": "./data/images/games/xxxxxxxx"
+    "name": "Eaglercraft 1.5.2",
+  "directory": "https://eaglercraftgame.github.io/go/minecraft-1.5.2/",
+    "image": "./data/images/games/mc.png"
   },
   {
-    "name": "name",
-  "directory": "directory",
-    "image": "./data/images/games/xxxxxxxx"
+    "name": "Eaglercraft 1.8.8",
+  "directory": "https://eaglercraftgame.github.io/go/minecraft-1.8.8/",
+    "image": "./data/images/games/mc.png"
+  },
+  {
+    "name": "Eaglercraft 1.3",
+  "directory": "https://eaglercraftgame.github.io/go/minecraft-1.3/",
+    "image": "./data/images/games/mc.png"
+  },
+  {
+    "name": "Basket Random",
+  "directory": "https://eaglercraftgame.github.io/g26/class-436/",
+    "image": "./data/images/games/basket-random.png"
+  },
+  {
+    "name": "Janissary Tower",
+  "directory": "https://files.twoplayergames.org/files/games/other/Janissary_Tower_v2/index.html",
+    "image": "./data/images/games/jan-tower.png"
+  },
+  {
+    "name": "Janissary Battles",
+  "directory": "https://files.twoplayergames.org/files/games/other/Janissary_Battles/index.html",
+    "image": "./data/images/games/jan-battles.png"
+  },
+  {
+    "name": "Catapult of Janissary",
+  "directory": "https://files.twoplayergames.org/files/games/mobile/o1/Catapult_of_Janissary/index.html",
+    "image": "./data/images/games/jan-catapult.png"
+  },
+  {
+    "name": "Castel Wars",
+  "directory": "https://files.twoplayergames.org/files/games/o1/Castel_Wars/index.html",
+    "image": "./data/images/games/castel-wars.png"
+  },
+  {
+    "name": "Castel Wars Middle Ages",
+  "directory": "https://files.twoplayergames.org/files/games/o1/Castel_Wars_Middle_Ages/index.html",
+    "image": "./data/images/games/castel-wars-middle-ages.png"
+  },
+  {
+    "name": "Axe of Janissary",
+  "directory": "https://files.twoplayergames.org/files/games/mobile/o1/Axe_of_Janissary/index.html",
+    "image": "./data/images/games/jan-axe.png"
+  },
+  {
+    "name": "Space Adrift 2",
+  "directory": "https://files.twoplayergames.org/files/games/other/Space_Adrift_2/index.html",
+    "image": "./data/images/games/space-adrift-2.png"
+  },
+  {
+    "name": "Mace of Janissary",
+  "directory": "https://files.twoplayergames.org/files/games/mobile/o1/Mace_of_Janissary/index.html",
+    "image": "./data/images/games/jan-mace.png"
+  },
+  {
+    "name": "Sword of Janissary",
+  "directory": "https://files.twoplayergames.org/files/games/mobile/o1/Sword_of_Janissary/index.html",
+    "image": "./data/images/games/jan-sword.png"
+  },
+  {
+    "name": "Arrow of Janissary",
+  "directory": "https://files.twoplayergames.org/files/games/mobile/o1/Arrow_of_Janissary/index.html",
+    "image": "./data/images/games/jan-arrow.png"
+  },
+  {
+    "name": "Spear of Janissary",
+  "directory": "https://files.twoplayergames.org/files/games/mobile/o1/Spear_of_Janissary/index.html",
+    "image": "./data/images/games/jan-spear.png"
+  },
+  {
+    "name": "Drive Ahead 2 Player",
+  "directory": "https://games.builds.gamepix.com/85E7EI/2n6gFJNLRmf9keI1ggRNoEj8DDE/index.html?sid=7SC1D&lang=en&namespace=drive-ahead",
+    "image": "./data/images/games/drive-ahead.png"
+  },
+  {
+    "name": "Arena of Janissary",
+  "directory": "https://files.twoplayergames.org/files/games/mobile/o1/Arena_of_Janissary/index.html",
+    "image": "./data/images/games/jan-arena.png"
   },
     {
       "name": "WorldGuessr",
