@@ -5,15 +5,16 @@ import { hostname } from "node:os";
 import compression from 'compression';
 import 'dotenv/config';
 import path from "node:path";
-
 let port = parseInt(process.env.PORT || "");
 if (isNaN(port)) port = 2100;
 
 const bare = createBareServer("/bare/");
 const app = express();
-
 const __dirname = process.cwd();
 
+app.use(compression());
+app.use(express.json());
+app.use(express.static(path.join(__dirname, "public")));
 app.get("/go=:query", async (req, res) => {
   const { query } = req.params;
   try {
@@ -21,81 +22,32 @@ app.get("/go=:query", async (req, res) => {
     const data = await reply.json();
     res.send(data);
   } catch (error) {
-    console.error('Error fetching suggestions:', error);
-    res.status(500).send({ error: 'Failed to fetch suggestions' });
+    console.error("Error fetching suggestions:", error);
+    res.status(500).send({ error: "Failed to fetch suggestions" });
   }
 });
-app.get('/', (req, res) => {
-  res.sendFile(path.join(process.cwd(), '/public/index.html'));
-});
-app.get('/g', (req, res) => {
-  res.sendFile(path.join(process.cwd(), '/public/g.html'));
-});
-app.get('/s', (req, res) => {
-  res.sendFile(path.join(process.cwd(), '/public/s.html'));
-});
-app.get('/a', (req, res) => {
-  res.sendFile(path.join(process.cwd(), '/public/a.html'));
-});
-app.get('/null', (req, res) => {
-  res.sendFile(path.join(process.cwd(), '/public/start.html'));
-});
-app.get('/games', (req, res) => {
-  res.sendFile(path.join(process.cwd(), '/public/nobodywillseethisunlessskidding.html'));
-});
 
+app.get("/", (req, res) => res.sendFile(path.join(__dirname, "/public/index.html")));
+app.get("/g", (req, res) => res.sendFile(path.join(__dirname, "/public/g.html")));
+app.get("/s", (req, res) => res.sendFile(path.join(__dirname, "/public/s.html")));
+app.get("/a", (req, res) => res.sendFile(path.join(__dirname, "/public/a.html")));
+app.get("/null", (req, res) => res.sendFile(path.join(__dirname, "/public/start.html")));
+app.get("/games", (req, res) => res.sendFile(path.join(__dirname, "/public/nobodywillseethisunlessskidding.html")));
 
-app.use(compression());
-app.use(express.static(process.cwd() + "/public/"));
-app.use("/public/uv/", express.static(process.cwd() + "/uv/"));
-
-app.use((req, res) => {
-  res.status(404);
-  res.send(
-    `404`
-  );
-});
+app.use((req, res) => res.status(404).send("404"));
 
 const server = http.createServer();
-
-server.on("request", (req, res) => {
-  if (bare.shouldRoute(req)) {
-    bare.routeRequest(req, res);
-  } else {
-    app(req, res);
-  }
-});
-
-server.on("upgrade", (req, socket, head) => {
-  if (bare.shouldRoute(req)) {
-    bare.routeUpgrade(req, socket, head);
-  } else {
-    socket.end();
-  }
-});
-
-server.on("listening", () => {
-  const address = server.address();
-  console.log("Breakium listening on:");
-  console.log(`\thttp://localhost:${address.port}`);
-  console.log(`\thttp://${hostname()}:${address.port}`);
-  console.log(
-    `\thttp://${
-      address.family === "IPv6" ? `[${address.address}]` : address.address
-    }:${address.port}`
-  );
-});
+server.on("request", (req, res) => (bare.shouldRoute(req) ? bare.routeRequest(req, res) : app(req, res)));
+server.on("upgrade", (req, socket, head) => (bare.shouldRoute(req) ? bare.routeUpgrade(req, socket, head) : socket.end()));
+server.on("listening", () => console.log(`Server running on port ${port}`));
 
 process.on("SIGINT", shutdown);
 process.on("SIGTERM", shutdown);
-
 function shutdown() {
-  console.log("SIGTERM signal received: closing HTTP server");
+  console.log("Closing server...");
   server.close();
   bare.close();
   process.exit(0);
 }
 
-server.listen({
-  port,
-});
+server.listen({ port });

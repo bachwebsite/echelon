@@ -8,6 +8,71 @@
     {}
   ],
   "games": [
+    {
+      "name": "Squid Game Cookie",
+    "directory": "https://html5.gamemonetize.co/jpb3v7uns4o8ht92m7i1y9jipc4hcwrh/",
+      "image": "./data/images/games/sg-cookie.png"
+    },
+    {
+      "name": "BusMan Parking 2",
+    "directory": "https://html5.gamemonetize.co/sbtpkzkyaj3i1tvrwfzbbz41g61jfn07/",
+      "image": "./data/images/games/buspark2.png"
+    },
+    {
+      "name": "Russian Extreme Offroad Driving",
+    "directory": "https://html5.gamemonetize.co/71bm57x78u7i2rjerysnhanpf8p2pmbw/",
+      "image": "./data/images/games/r-e-o-d.png"
+    },
+    {
+      "name": "Riding master",
+    "directory": "https://html5.gamemonetize.co/nijybbwothi9exyo5tv9mi9g211u9w8y/",
+      "image": "./data/images/games/riding-master.png"
+    },
+    {
+      "name": "Breakers Football",
+    "directory": "https://html5.gamemonetize.co/qacm048pxh685vegcv72lbdud8sqgw32/",
+      "image": "./data/images/games/breakers-football.png"
+    },
+    {
+      "name": "HARD CRAFT",
+    "directory": "https://html5.gamemonetize.co/0j89us4rd81f36rqaj9o2etdvjkyd9z1/",
+      "image": "./data/images/games/hard-craft.png"
+    },
+    {
+      "name": "Granny Returns Haunted House",
+    "directory": "https://html5.gamemonetize.co/pm5wjn3np4xl59y8ie3a85xqs1m1nyma//",
+      "image": "./data/images/games/granny-returns-haunted-house.png"
+    },
+    {
+      "name": "Water Color Sort",
+    "directory": "https://html5.gamemonetize.co/y9vzzsjszdqwhwjwaj50hmfyosw9rs1s/",
+      "image": "./data/images/games/water-color-sort-online.png"
+    },
+    {
+      "name": "Bad Parenting",
+    "directory": "https://app-383448.games.s3.yandex.net/383448/djdjtab28yds1q9w7w0v3y2dpb2e9h5o_brotli/index.html?sdk=%2Fsdk%2F_%2Fv2.3dbe6d470bb05b5eef77.js#origin=https%3A%2F%2Fplayhop.com&app-id=383448&device-type=desktop",
+      "image": "./data/images/games/bad-parenting.png"
+    },
+    {
+      "name": "Granny",
+    "directory": "https://1games.io/game/granny-horror/",
+      "image": "./data/images/games/granny.png"
+    },
+    {
+      "name": "Home Alone",
+    "directory": "https://kdata1.com/2024/08/home-alone/",
+      "image": "./data/images/games/home-alone.png"
+    },
+    {
+      "name": "Doors Online",
+    "directory": "https://doors-online.game-files.crazygames.com/unity/unity2020/doors-online.html?v=1.323",
+      "image": "./data/images/games/doors-online.png"
+    },
+    {
+      "name": "Squid Game IO",
+    "directory": "https://squidgame-io.io/",
+      "image": "./data/images/games/squid-game.png"
+    },
   {
     "name": "Slime Laboratory",
   "directory": "https://www.coolmathgames.com/0-slime-laboratory/play",
