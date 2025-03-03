@@ -5,21 +5,6 @@
     "directory": "directory",
       "image": "./data/images/games/xxxxxxxx"
     },
-    {
-    "name": "Eaglercraft 1.5.2",
-  "directory": "https://eaglercraftgame.github.io/go/minecraft-1.5.2/",
-    "image": "./data/images/games/mc.png"
-  },
-  {
-    "name": "Eaglercraft 1.8.8",
-  "directory": "https://eaglercraftgame.github.io/go/minecraft-1.8.8/",
-    "image": "./data/images/games/mc.png"
-  },
-  {
-    "name": "Eaglercraft 1.3",
-  "directory": "https://eaglercraftgame.github.io/go/minecraft-1.3/",
-    "image": "./data/images/games/mc.png"
-  },
     {}
   ],
   "games": [
