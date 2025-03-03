@@ -78,7 +78,7 @@
   "directory": "https://www.coolmathgames.com/0-slime-laboratory/play",
     "image": "./data/images/games/slime-lab.png"
   },
-  
+  {
     "name": "Basket Random",
   "directory": "https://eaglercraftgame.github.io/g26/class-436/",
     "image": "./data/images/games/basket-random.png"
