@@ -9,6 +9,11 @@
   ],
   "games": [
     {
+      "name": "PolyTrack",
+    "directory": "https://app-polytrack.kodub.com/0.5.0/",
+      "image": "./data/images/games/polytrack.png"
+    },
+    {
       "name": "Squid Game Cookie",
     "directory": "https://html5.gamemonetize.co/jpb3v7uns4o8ht92m7i1y9jipc4hcwrh/",
       "image": "./data/images/games/sg-cookie.png"
