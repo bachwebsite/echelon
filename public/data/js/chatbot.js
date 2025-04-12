@@ -11,10 +11,10 @@ async function sendMessage() {
     'Content-Type': 'application/json',
   };
   const body = JSON.stringify({
-    model: "mistralai/mistral-7b-instruct",
+    model: "openai/gpt-3.5-turbo",
     messages: [
-      // { role: "system", content: "You are a helpful assistant. Your name is Breakium AI." },
-      { role: "system", content: "send no information, just your answer" },
+      { role: "system", content: "You are a helpful assistant. Your name is Breakium AI." },
+      //{ role: "system", content: "send no information, just your answer" },
       { role: "user", content: userText }
     ]
   });
