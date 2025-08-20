@@ -32,7 +32,7 @@ app.get("/g", (req, res) => res.sendFile(path.join(__dirname, "/public/g.html"))
 app.get("/s", (req, res) => res.sendFile(path.join(__dirname, "/public/s.html")));
 app.get("/a", (req, res) => res.sendFile(path.join(__dirname, "/public/a.html")));
 app.get("/null", (req, res) => res.sendFile(path.join(__dirname, "/public/start.html")));
-app.get("/games", (req, res) => res.sendFile(path.join(__dirname, "/public/nobodywillseethisunlessskidding.html")));
+app.get("/portfolio", (req, res) => res.sendFile(path.join(__dirname, "/public/yesbro.html")));
 
 app.use((req, res) => res.status(404).send("404"));
 
