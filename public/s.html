@@ -7,70 +7,264 @@
     <link rel="shortcut icon" href="./data/images/favicon-transparent.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./data/css/s.css">
+
     <title>Settings - Breakium</title>
 </head>
-<body>
-    <div id="cont">
-        <!-- Sidebar for options -->
-        <div class="sidebar">
-            <button data-target="general">General</button>
-            <button data-target="appearance">Appearance</button>
-            <button data-target="privacy">Privacy</button>
-            <button data-target="about">About</button>
-            <button onclick="window.location.href = '/'" style="background-color: darkgreen !important;" id="saveChanges">Save Changes</button>
+<body class="dark-theme">
+    <nav class="top-nav">
+        <div class="nav-container">
+            <div class="logo"><strong>breakium</strong></div>
+            <div class="nav-links">
+                <a href="/g" class="nav-item">
+                    <img src="/data/images/svg/game.svg" alt="Games">
+                    <span>Games</span>
+                </a> 
+                
+                <a href="/null" class="nav-item">
+                    <img src="/data/images/svg/search.svg" alt="Search">
+                    <span>Search</span>
+                </a>
+                <a href="/s" class="nav-item active">
+                    <img src="/data/images/svg/settings.svg" alt="Settings">
+                    <span>Settings</span>
+                </a>
+            </div>
         </div>
+    </nav>
 
-        <!-- Content area -->
-        <div class="content">
-            <div id="general" class="option-section active">
-                <h2>General Settings</h2>
-                <p>Manage general preferences</p>
-                <label class="switch">
-                    <input type="checkbox" id="adToggle">
-                    <span class="slider"></span>
-                </label>
-                <span>Disable Ads</span>
-                <button id="downloadIframeBtn">Download Iframe Page</button>
+   
+    <div class="settings-wrapper">
+        <div class="settings-container">
+            <div class="settings-hero">
+                <h1 class="settings-title">
+                    <span class="title-sett">Sett</span><span class="title-ings">ings</span>
+                </h1>
+                <p class="settings-subtitle">Customize your Breakium experience</p>
             </div>
 
-            <div id="appearance" class="option-section">
-                <h2>Appearance</h2>
-                <p>Customize the look and feel of the application, including themes and fonts.</p>
-                
-                <div class="custom-dropdown">
-                    <div class="dropdown-header">
-                        <span id="selected-theme">Select Theme</span>
-                        <span class="dropdown-arrow">&#9660;</span>
-                    </div>
-                    <ul class="dropdown-list">
-                        <li data-theme="">Default</li>
-                        <li data-theme="light-theme">Light Theme</li>
-                        <li data-theme="dark-theme">Dark Theme</li>
-                        <li data-theme="red-theme">Red Theme</li>
-                    </ul>
+        
+            <div id="cont">
+                <div class="sidebar">
+                    <button data-target="general" class="active">
+                        <span class="btn-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1 1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                            </svg>
+                        </span>
+                        <span>General</span>
+                    </button>
+                    <button data-target="appearance">
+                        <span class="btn-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="13.5" cy="6.5" r=".5"/>
+                                <circle cx="17.5" cy="10.5" r=".5"/>
+                                <circle cx="8.5" cy="7.5" r=".5"/>
+                                <circle cx="6.5" cy="12.5" r=".5"/>
+                                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/>
+                            </svg>
+                        </span>
+                        <span>Appearance</span>
+                    </button>
+                    <button data-target="privacy">
+                        <span class="btn-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="18" height="11" x="3" y="11" rx="2" ry="2"/>
+                                <path d="m7 11V7a5 5 0 0 1 10 0v4"/>
+                            </svg>
+                        </span>
+                        <span>Privacy</span>
+                    </button>
+                    <button data-target="about">
+                        <span class="btn-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="m9 12 2 2 4-4"/>
+                            </svg>
+                        </span>
+                        <span>About</span>
+                    </button>
+                    <button onclick="window.location.href = '/'" class="save-btn" id="saveChanges">
+                        <span class="btn-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/>
+                                <polyline points="17,21 17,13 7,13 7,21"/>
+                                <polyline points="7,3 7,8 15,8"/>
+                            </svg>
+                        </span>
+                        <span>Save & Return</span>
+                    </button>
                 </div>
 
-                <textarea placeholder="Enter custom CSS here..."></textarea>
-            </div>
+              
+                <div class="content">
+                    <div id="general" class="option-section active">
+                        <div class="section-header">
+                            <h2>General Settings</h2>
+                            <p>Manage your general preferences and features</p>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <h3>Disable Advertisements</h3>
+                                    <p>Hide ads across the platform for a cleaner experience</p>
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox" id="adToggle">
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                            
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <h3>Download Tools</h3>
+                                    <p>Download iframe page for offline usage</p>
+                                </div>
+                                <button id="downloadIframeBtn" class="action-btn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                        <polyline points="7,10 12,15 17,10"/>
+                                        <line x1="12" x2="12" y1="15" y2="3"/>
+                                    </svg>
+                                    Download Iframe
+                                </button>
+                            </div>
+                        </div>
+                    </div>
 
-            <div id="privacy" class="option-section">
-                <h2>Test</h2>
-                <p>This is a test tab</p>
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-                <span>switch_Test</span>
-                <textarea placeholder="textbox_Test"></textarea>
-            </div>
+                    <div id="appearance" class="option-section">
+                        <div class="section-header">
+                            <h2>Appearance</h2>
+                            <p>Customize the look and feel of your interface</p>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <h3>Theme Selection</h3>
+                                    <p>Choose your preferred color theme</p>
+                                </div>
+                                <div class="custom-dropdown">
+                                    <div class="dropdown-header">
+                                        <span id="selected-theme">Default Theme</span>
+                                        <span class="dropdown-arrow">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="m6 9 6 6 6-6"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <ul class="dropdown-list">
+                                        <li data-theme="">Default</li>
+                                        <li data-theme="light-theme">Light Theme</li>
+                                        <li data-theme="dark-theme">Dark Theme</li>
+                                        <li data-theme="red-theme">Red Theme</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="setting-item full-width">
+                                <div class="setting-info">
+                                    <h3>Custom CSS</h3>
+                                    <p>Add your own custom styling (Advanced users only)</p>
+                                </div>
+                                <textarea placeholder="/* Enter your custom CSS here... */" rows="8"></textarea>
+                            </div>
+                        </div>
+                    </div>
 
-            <div id="about" class="option-section">
-                <h2>About</h2>
-                <p>special thanks to the proxy dev community :) and yes bach made this</p>
+                    <div id="privacy" class="option-section">
+                        <div class="section-header">
+                            <h2>Privacy & Security</h2>
+                            <p>Control your privacy and security settings</p>
+                        </div>
+                        
+                        <div class="setting-group">
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <h3>Analytics Tracking</h3>
+                                    <p>Allow anonymous usage analytics to help improve the platform</p>
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                            
+                            <div class="setting-item">
+                                <div class="setting-info">
+                                    <h3>Data Storage</h3>
+                                    <p>Enable local storage for better performance</p>
+                                </div>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                            
+                            <div class="setting-item full-width">
+                                <div class="setting-info">
+                                    <h3>Privacy Notes</h3>
+                                    <p>Additional privacy configuration notes</p>
+                                </div>
+                                <textarea placeholder="Enter any privacy-related notes or configurations..." rows="6"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="about" class="option-section">
+                        <div class="section-header">
+                            <h2>About Breakium</h2>
+                            <p>Information about this platform</p>
+                        </div>
+                        
+                        <div class="about-content">
+                            <div class="about-card">
+                                <h3>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
+                                        <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
+                                        <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/>
+                                        <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>
+                                    </svg>
+                                    Platform Info
+                                </h3>
+                                <p>Breakium is a modern web platform providing unblocked games and proxy services with a focus on performance and user experience.</p>
+                            </div>
+                            
+                            <div class="about-card">
+                                <h3>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7 7-7Z"/>
+                                    </svg>
+                                    Special Thanks
+                                </h3>
+                                <p>Special thanks to the proxy development community for their continued support and innovation. This platform was crafted with care by Bach.</p>
+                            </div>
+                            
+                            <div class="about-card">
+                                <h3>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+                                    </svg>
+                                    Connect
+                                </h3>
+                                <p>Join our Discord community for support, updates, and to connect with other users.</p>
+                                <a href="https://discord.gg/s4gXM6XUgH" target="_blank" class="discord-btn">
+                                    <img src="/data/images/discord-2-xxl.png" alt="Discord">
+                                    Join Discord
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
     <script type="text/javascript">
         (function(c,l,a,r,i,t,y){
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -78,6 +272,7 @@
             y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
         })(window, document, "clarity", "script", "pbldbrga67");
     </script>
+    
     <script src="./data/js/theme.js"></script>
     <script src="./data/js/s.js"></script>
 </body>
