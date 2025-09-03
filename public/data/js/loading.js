@@ -13,7 +13,7 @@ loadingScreen.style.alignItems = 'center';
 loadingScreen.style.zIndex = '10000';
 
 loadingScreen.innerHTML = `
-  <img src="/data/images/gifs/spinner.gif" alt="Loading..." style="max-width: 150px; max-height: 150px;">
+  <img src="/data/images/loading.gif" alt="Loading..." style="max-width: 150px; max-height: 150px;">
 `;
 
 document.body.appendChild(loadingScreen);
