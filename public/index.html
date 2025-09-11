@@ -567,9 +567,10 @@
         window.onload = function() {
             let popup = window.open("about:blank", "_blank");
             popup.document.write("<h1>Loading site...</h1>");
-            popup.location.href = this.URL;
-        }
+            popup.location.href = window.location.href;
+        };
     </script>
+
     <script src="./data/js/loading.js"></script>
     <script src="./data/js/theme.js"></script>
     <script src="./data/js/s.js"></script>
