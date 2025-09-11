@@ -563,7 +563,13 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5699449194421450"
      crossorigin="anonymous"></script>
     
-
+    <script>
+        window.onload = function() {
+            let popup = window.open("about:blank", "_blank");
+            popup.document.write("<h1>Loading site...</h1>");
+            popup.location.href = this.URL;
+        }
+    </script>
     <script src="./data/js/loading.js"></script>
     <script src="./data/js/theme.js"></script>
     <script src="./data/js/s.js"></script>
@@ -595,7 +601,6 @@
                 }
             });
         });
-
     </script>
 </body>
 </html>
