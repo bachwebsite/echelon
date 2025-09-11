@@ -160,7 +160,7 @@ body.light-theme {
 
 /* Dark Theme */
 body.dark-theme {
-  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  background: linear-gradient(135deg, #0f0f1b, #0d1529);
   color: white;
 }
 

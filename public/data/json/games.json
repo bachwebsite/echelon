@@ -9,6 +9,31 @@
   ],
   "games": [
     {
+      "name": "Stein World",
+    "directory": "https://stein.world",
+      "image": "./data/images/games/steinworld.png"
+    },
+    {
+      "name": "Updated IdleOn",
+    "directory": "https://www.legendsofidleon.com/ytGl5oc",
+      "image": "./data/images/games/idleon.png"
+    },
+    {
+      "name": "Agonia RPG",
+    "directory": "https://www.agonialands.com/index.php",
+      "image": "./data/images/games/agonia.png"
+    },
+    {
+      "name": "Neon Ball Slope",
+    "directory": "https://html5.gamemonetize.co/tvffgv3xt5p39edpb54kiulbaa86ia21",
+      "image": "https://img.gamemonetize.com/tvffgv3xt5p39edpb54kiulbaa86ia21/512x384.jpg"
+    },
+    {
+      "name": "Clash Royale (Trash royale)",
+    "directory": "https://www.greenfoot.org/scenarios/27793?embed=true",
+      "image": "./data/images/games/clash-royale.png"
+    },
+    {
       "name": "PolyTrack",
     "directory": "https://app-polytrack.kodub.com/0.5.0/",
       "image": "./data/images/games/polytrack.png"
