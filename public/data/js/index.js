@@ -24,7 +24,7 @@ const errorCode = document.getElementById("uv-error-code");
 const input = document.querySelector("input");
 
 const swConfig = {
-  'uv': { file: '/uv/sw.js', config: __uv$config },
+  'uv': { file: 'https://cdn.jsdelivr.net/gh/bachwebsite/echelon/public/uv/sw.js', config: __uv$config },
 };
 
 let swConfigSettings; // Define swConfigSettings globally
